@@ -42,7 +42,7 @@ The recent development of artificial intelligence (AI) has made people look forw
 According to the paper, there is two dimensions that should be considered to answering the question. The first dimension is \textit{what AI can do}, or \textit{capability}. This means performance of AI for a particular task. Almost all traditional researches are about this dimension. The second dimension is \textit{what AI should do}, or \textit{human preference} which means what role human wants to delegate to AI. This is clearly important dimension, but virtually no research has been conducted. This work is the first empirical study about the second dimension and has been conducted for better understanding of how different factors affect human preferences of delegation (\textit{delegability}). 
 
 \section{Approach}
-For this work, the authors have done following three steps: devising a framework based on four factors that are considered to affect the delegability, constructing a dataset of diverse tasks like 'dignosing cancers' for understanding the delegabilities in different tasks, conducting a survey created using the factors and dataset to investigate to which extent people prefer AI's involvement. 
+For this work, the authors have done following three steps: devising a framework based on four factors that are considered to affect the delegability, constructing a dataset of diverse tasks like 'dignosing cancers' for understanding the delegabilities in different tasks, conducting a survey created using the factors and dataset to investigate how much AI's involvement is preferred by people. 
 
 \subsection{Step 1: Devising a Framework for Delegability}
 \paragraph{Four Factors}
@@ -50,18 +50,18 @@ The authors devised a framework with four high-level factors considered to affec
 
 
 \paragraph{Delegability}
-The authors splited degree of delegation to measure human preferences according to the four factors. The degree of delegation is splited into the follwing four levels: \textbf{No AI assistance}, \textbf{The human leads and the AI assists} (or \textit{machine-in-the-loop}), \textbf{The AI leads and the human assists} (or \textit{human-in-the-loop}) and \textbf{Full AI automation}.
+The authors splited degree of delegation to measure human preferences according to the four factors. It is splited into the follwing four levels: \textbf{No AI assistance}, \textbf{The human leads and the AI assists} (or \textit{machine-in-the-loop}), \textbf{The AI leads and the human assists} (or \textit{human-in-the-loop}) and \textbf{Full AI automation}.
 
 \subsection{Step 2: Constructing a Dataset of 100 Tasks}
-To evaluate the framework empirically, the authors collected diverse tasks from academic conferences, media, well-known occupations and people's everyday-life like 'Identifying fake news article'(from conferences) or 'buying a birthday present'(from everday-life).
+To evaluate the framework empirically, the authors collected diverse tasks from academic conferences, media, well-known occupations and people's everyday-life such as 'Identifying fake news article'(from conferences) or 'buying a birthday present'(from everday-life).
 
 
 \subsection{Step 3: Conducting a Survey}
-The authors conducted 5-minute survey using Mechanical Turk. They used two versions of surveys: \textbf{Personal Survey} and \textbf{Expert Survey} because if a subject does not perform a task that requires expertise, e.g., 'diagnosing cancer', the motivation can not be estimated. They recorded total 1000 responses:  500 personal and expert surveys each and 5 for the 100 tasks each.
+The authors conducted 5-minute survey using Amazon Mechanical Turk. They used two versions of survey: \textbf{Personal Survey} and \textbf{Expert Survey} because if a subject does not perform a task that requires expertise, e.g., 'diagnosing cancer', the motivation can not be estimated. They recorded total 1000 responses:  500 personal and expert surveys each and 5 for the 100 tasks each.
 \vspace{0.2cm}
 
 \section{Results}
-On both personal and expert surveys, the subjects prefer \textit{machine-in-the-loop}, and have little preference for \textit{AI only} as we can see on Figure~\ref{fig:dist}. Examining the correlation between the delegability and the four factors, trust showed the strongest correlation. However, interestingly, interpretability which belongs to sub-concepts of trust does not show significant relationships. They also investigated relations between factors and found difficulty and risk have the strongest correlation. Additionally, the authors trained a classifier for verfifying the proposed framework and that classifier shows better performance than a random baseline.
+On both personal and expert surveys, the subjects prefer \textit{machine-in-the-loop}, and have little preference for \textit{AI only} as we can see on Figure~\ref{fig:dist}. Examining the correlation between the delegability and the four factors, trust showed the strongest correlation. However, interestingly, interpretability which belongs to sub-concepts of trust does not show significant relationships. They also investigated relations between factors and found difficulty and risk have the strongest correlation. Additionally, the authors trained a classifier for verfifying the proposed framework and the classifier shows better performance than a random baseline.
 
 
 \begin{figure}[b]
