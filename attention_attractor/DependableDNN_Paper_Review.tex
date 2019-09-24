@@ -1,0 +1,80 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{dependable_dnn}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\iccvfinalcopy % *** Uncomment this line for the final submission
+
+\def\iccvPaperID{} % *** Enter the Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ificcvfinal\pagestyle{empty}\fi
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{Incremental Few-Shot Learning with Attention Attractor Networks\\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}}   % **** Enter the paper title and student information here
+
+\maketitle
+\thispagestyle{empty}
+
+%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Overall Format}
+Use this format for submission.
+
+
+%%%%%%%%%%%%%%%%%
+\subsection{Subsection}
+Paper reference should be like \cite{wug2018fast}.
+
+%%%%%%%%%%%%%%%%%
+\subsection{Subsection}
+You can add some tables if necessary.
+For example, Table~\ref{tab:result_davis16} presents something.
+%
+\begin{table}[t]
+\caption{Comparison.}
+\begin{center}
+\scalebox{0.8}{
+\begin{tabular}{c|cccc}
+\hline
+ Method & U2-Net$\_$single  & OSVOS-- &  MaskTrack-- &  CRN--\cite{hu2018motion} \\
+\hline
+\hline
+mean-$\mathcal{J}$ & 68.4  & 64.6 & 57.6 & 52.6  \\
+\hline
+\end{tabular}
+}
+\end{center}
+\label{tab:result_davis16}
+\end{table}
+%
+ 
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Other Things}
+Describe other things.
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
