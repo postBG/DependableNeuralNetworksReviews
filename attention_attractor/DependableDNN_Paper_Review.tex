@@ -83,7 +83,8 @@ where $U_k = f_\phi (W_{a, k})$ where $\phi$ is parameters of MLP  $f$. $U_k$ ca
 \subsection{Meta-Learning Stage}\label{meta}
 In this step, the meta parameters $ \theta_E $ are trained using the episode $\xi = \{\Sb, \Qb\}$ and $\Qa$ . $ \theta_E $ is trained to minimize the expected cross entropy loss for both $\Qa$ and $\Qb$. Therefore, in this stage, both base and novel classes are used. To train $\theta_{E}$, Recurrent Back-propagation is used because BPTT needs too many iterations until convergence, and T-BPTT can be unstable depending on T.
 
-
+\section{Personal Memo}
+Proposed method still needs base dataset for training a few novel classes. Trying to encode information of base classes to novel classifier seems unnatural.
 
 {\small
 \bibliographystyle{ieee}
