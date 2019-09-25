@@ -22,6 +22,9 @@
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 \ificcvfinal\pagestyle{empty}\fi
 
+\newcommand{\Da}{\mathcal{D}_a}
+
+
 \begin{document}
 
 %%%%%%%%% TITLE - PLEASE UPDATE
@@ -30,51 +33,45 @@
 \maketitle
 \thispagestyle{empty}
 
-%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Introduction}
+This paper tried to solve \textit{incremental few-shot learning}. In incremental few-shot learning, we assumes there are base classes and novel classes which are disjoint each other. A model is initially trained using examples from base classes with sufficient labels. Then without re-training on the base classes, we train the model on few-shot labeled novel classes. After trained on novel classes, performance of the model is evaluated on both base and novel classes. If we train the model naively, the performance on base classes is largely reduced (\textit{Catastrophic forgetting}). To avoid this problem, the authors proposed an \textbf{Attention Attractor Networks Regularizer} that can be interpreted as learned memory for base classes. They also showed the regularizer can be trained using recurrent back-propagation.
 
-%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%
-\section{Overall Format}
-Use this format for submission.
+\section{Methods}
+In this method, a model trained using examples from base classes in \textbf{Pretrain Stage~\ref{pretrain}}. Then the model is trained by repeating \textbf{Incremental Few-Shot Episodes Stage~\ref{fewshot}} and \textbf{Meta-Learning Stage~\ref{meta}}.
 
+\subsection{Pretraining Stage}\label{pretrain}
 
-%%%%%%%%%%%%%%%%%
-\subsection{Subsection}
-Paper reference should be like \cite{wug2018fast}.
+This step aims to get a good feature extractor $f$ and a base classifier parameterized with $W_a$ before training on novel classes. Pretaining stage using typical cross entropy for the base dataset $\{(x_{a,i},y_{a,i})\}_{i=1}^{N_a}\in\Da$ where $y_{a,i}\in\{1...K\}$ and $x_{a, i}$ are $i$-th label and example from the base dataset $\Da$, respectively.
 
-%%%%%%%%%%%%%%%%%
-\subsection{Subsection}
-You can add some tables if necessary.
-For example, Table~\ref{tab:result_davis16} presents something.
-%
-\begin{table}[t]
-\caption{Comparison.}
-\begin{center}
-\scalebox{0.8}{
-\begin{tabular}{c|cccc}
-\hline
- Method & U2-Net$\_$single  & OSVOS-- &  MaskTrack-- &  CRN--\cite{hu2018motion} \\
-\hline
-\hline
-mean-$\mathcal{J}$ & 68.4  & 64.6 & 57.6 & 52.6  \\
-\hline
-\end{tabular}
-}
-\end{center}
-\label{tab:result_davis16}
-\end{table}
-%
- 
+\subsection{Incremental Few-Shot Episodes}\label{fewshot}
 
-%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%
-\section{Other Things}
-Describe other things.
+In this step, we will do a few-shot training on the episode $ epsilon $ from the few-shot dataset Db. At this time, the episode is composed of support set Sb and query set Qb, which play the same role as training set and validation set in supervised learning. As we progress through each episode, we learn Wb, which is called fast weights, where Wa is fixed, and the loss to Wb consists of:
+
+$ Ls (Wb, theta_E) = cross_entropy (Wb, Sb) + R (Wb, theta_E) $
+
+Where R is the attention attractor networks regularizer and parameterized by $ theta_E $. $ theta_E $ is learned in the meta-learning stage, which is fixed at this stage. As explained earlier, the performance of the model should eventually be good for both base classes and novel classes, which means that the performance for the union Qa + b of the query set Qa for Da and the query set Qb for Db should be high. R is used to alleviate the problem of poor Qa performance due to catastrophic forgetting when only cross entropy is used. In the Incremental Few-Shot Episodes phase, the meta parameters $theta_E$ are fixed. This regularizer term and $ theta_E $ are described in the Attention Attractor Networks Regularzier.
+
+\subsubsection{Attention Attractor Networks Regularizer}\label{atnr}
+This section describes the Regularizer R. R (Wb, $ theta_E $) is defined as
+
+$R (Wb, theta_E) = sum_k ’{1, K’} squared_mahalanobis_distance (Wb, k ’, uk’, gamma)$
+
+In this case, gamma is a learnable parameter and attractor uk is defined as follows.
+
+$uk ’= sum_k ak’, k Uk + U0$
+
+%At this time, $Uk = f_pi (Wa, k)$ is defined, f is an MLP having pi as a parameter. Uk can be interpreted as learned memory for base classes. U0 is the bias term and ak ', k encodes normalized pairwise attention between a novel class k' and a base class k. This ak ', k is parameterized by tau which is a learnable parameter. $theta_E$ is the gamma, pi. U0 means tau. These values ​​are learned at the Meta-Learning Stage and are fixed at the Incremental Few-Shot Episodes Stage.
+
+The regularizer term induces the encoding of information used to classify base classes due to attractors when Wb encodes information about a novel class. This is because Uk is the memory encoding base class k, and attractor is the weighted sum of Uk. This term prevents catastrophic forgetting and learns about novel classes.
+
+\subsection{Meta-Learning Stage}\label{meta}
+In this step, you learn the meta parameters $ theta_E $ for the episode epsilon. This $ theta_E $ is trained to minimize the expected cross entropy loss for Qa + b generated through multiple episodes. At this time, Recurrent Back-propagation can be used to learn $ theta_E $. The reason for using this is that BPTT takes too long to learn, and T-BPTT is prone to bias in performance depending on the T value.
 
 
 {\small
 \bibliographystyle{ieee}
-\bibliography{egbib}
 }
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  25 SEP 2019 02:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  26 SEP 2019 04:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -275,21 +275,21 @@ File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 (./DependableDNN_Paper_Review.aux)
 \openout1 = `DependableDNN_Paper_Review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 28.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -335,7 +335,7 @@ e
 ))
 \AtBeginShipoutBox=\box32
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 28.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -345,59 +345,89 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 46.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 46.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./DependableDNN_Paper_Review.bbl (./DependableDNN_Paper_Review.brf)
-\tf@brf=\write3
-\openout3 = `DependableDNN_Paper_Review.brf'.
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]$\OML/cmm/m/it/10 Ls\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Wb; theta[]\OT1/cmr/m/n
+/10 ) = \OML/cmm/m/it/10 cross[]ntropy\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Wb; Sb\
+OT1/cmr/m/n/10 ) +
+ []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 59.
+
+
+Overfull \hbox (117.86066pt too wide) in paragraph at lines 59--60
+[]$\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Wb; theta[]\OT1/cmr/m/n/
+10 ) = \OML/cmm/m/it/10 sum[][]squared[]ahalanobis[]istance\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 Wb; k[]; uk[]; gamma\OT1/cmr/m/n/10 )$ 
+ []
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 63.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 63.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 
 (./DependableDNN_Paper_Review.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
-Package rerunfilecheck Info: File `DependableDNN_Paper_Review.brf' has not chan
-ged.
-(rerunfilecheck)             Checksum: 73884FE68B99244057E4D0764F3862BD;92.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 6304 strings out of 492616
- 91493 string characters out of 6128983
- 184608 words of memory out of 5000000
- 10133 multiletter control sequences out of 15000+600000
- 15645 words of font info for 36 fonts, out of 8000000 for 9000
+ 6289 strings out of 492616
+ 91204 string characters out of 6128983
+ 188771 words of memory out of 5000000
+ 10126 multiletter control sequences out of 15000+600000
+ 15179 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,15n,27p,305b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,5n,27p,876b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on DependableDNN_Paper_Review.pdf (1 page, 41755 bytes).
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on DependableDNN_Paper_Review.pdf (1 page, 103407 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 65 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,3 @@
-\begin{thebibliography}{1}\itemsep=-1pt
-
-\bibitem{hu2018motion}
-P.~Hu, et~al.
-\newblock {Motion-guided Cascaded Refinement Network for Video Object
-  Segmentation}.
-\newblock In {\em CVPR}, 2018.
-
-\bibitem{wug2018fast}
-S.~W. Oh, et~al.
-\newblock {Fast Video Object Segmentation by Reference-guided Mask
-  Propagation}.
-\newblock In {\em CVPR}, 2018.
+\begin{thebibliography}{}\itemsep=-1pt
 
 \end{thebibliography}
