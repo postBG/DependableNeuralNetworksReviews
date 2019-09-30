@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\newcommand{\D}{\mathcal{D}}
 
 % Include other packages here, before hyperref.
 
@@ -25,7 +26,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE - PLEASE UPDATE
-\title{Title \\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
+\title{Project Proposal: \\ Domain Generalization by Matching Feature Distributions \\{\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
 
 \maketitle
 \thispagestyle{empty}
@@ -34,8 +35,20 @@
 
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
-\section{Overall Format}
-Use this format for submission.
+\section{Main Idea and Motivation}
+\paragraph{Main Idea}  In this project, I will tackle the \textit{Domain Generalization} (DG). The main idea of this project is to employ consistency loss between two data points that share the same label but have different domains. This idea is based on a simple concept and can be easily integrated with other methods.
+
+\paragraph{Motivation}
+The primary purpose of domain generalization is to train a model that generalizes well to the unseen target domain. For this purpose, we should induce a model to encode features taht are sufficiently semantic and consistent across domains. Therefore, It is natural to add consistency loss between same-labeled data points but sampled from different domains. 
+
+Some of the previous works have attempted to learn domain invariant features. However, those methods did not care about the task at hand, so they achieved sub-optimal performance. Unlikely, this project explicitly concerns about the task at hand by using labels. Furthermore, the consistency loss acts as a regularizer that prevents the feature extractor from encoding redundant information like style or texture. It is also easier to implement than other multi-task based methods like JiGen~\cite{JiGen}.
+
+\paragraph{Justification of Relevance to Class}
+Dependable Nerual Networks must be able to work in the new environment.
+
+
+\section{The Project Plan}
+
 
  
 
