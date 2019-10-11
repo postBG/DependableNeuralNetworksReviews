@@ -25,7 +25,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE - PLEASE UPDATE
-\title{Title \\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
+\title{Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels \\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
 
 \maketitle
 \thispagestyle{empty}
@@ -34,10 +34,12 @@
 
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
-\section{Overall Format}
-Use this format for submission.
+\section{Introduction}
+This paper addresses training with extremely noisy labels. A network often fails to learn a task when labels are noisy. This phenomenon occurs because the network tries to memorize these noisy labels and fails to generalize. Meanwhile, recent studies on the memorization effects found that models first memorize clean examples and then memorize noisy ones. Based on these results, this paper tries to select clean examples out of the noisy examples and use them to update the network.
 
- 
+\section{Methods} 
+The proposed method is simple. The method simultaneously trains two networks $f$ and $g$. While training, each network samples $r$\% examples from a minibatch in order of smallest loss. We denote those examples as $D_f$ and $D_g$, respectively. After selecting examples, the method updates the networks using co-teaching, which means updating the network $f$ using $D_g$ and the network $g$ using $D_f$. As the training step increases, the proposed method decays the sampling rate  $r$. This decaying is based on the results that models memorize clean examples first and then memorize noisy ones. If we do not decay $r$, the number of noisy examples sampled by models increases as the training step increases.
+
 
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
