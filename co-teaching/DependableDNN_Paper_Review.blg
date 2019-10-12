@@ -2,12 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: DependableDNN_Paper_Review.aux
 The style file: ieee.bst
+I found no \citation commands---while reading file DependableDNN_Paper_Review.aux
 Database file #1: egbib.bib
-Warning--I didn't find a database entry for "wug2018fast"
-Warning--I didn't find a database entry for "hu2018motion"
 You've used 0 entries,
             2143 wiz_defined-function locations,
-            501 strings with 3785 characters,
+            499 strings with 3762 characters,
 and the built_in function-call counts, 19 in all, are:
 = -- 0
 > -- 0
@@ -46,4 +45,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 warnings)
+(There was 1 error message)
