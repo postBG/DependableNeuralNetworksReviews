@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  2 NOV 2019 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  2 NOV 2019 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -365,17 +365,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 53.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 6250 strings out of 492616
- 90619 string characters out of 6128983
- 180803 words of memory out of 5000000
- 10109 multiletter control sequences out of 15000+600000
+ 6245 strings out of 492616
+ 90556 string characters out of 6128983
+ 182516 words of memory out of 5000000
+ 10104 multiletter control sequences out of 15000+600000
  9063 words of font info for 22 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,5n,27p,242b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,5n,27p,1020b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on DependableDNN_Paper_Review.pdf (1 page, 25524 bytes).
+Output written on DependableDNN_Paper_Review.pdf (1 page, 28016 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream
