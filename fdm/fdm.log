@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  10 NOV 2019 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  10 NOV 2019 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,8 +363,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) (./sections/method.tex)
-(./fdm.bbl
+]) (./sections/method.tex
+Underfull \hbox (badness 1584) in paragraph at lines 5--5
+[] \elvbf . Class-wise Fea-ture Dis-tri-bu-tion Match-ing
+ []
+
+) (./fdm.bbl
 Underfull \hbox (badness 2376) in paragraph at lines 9--12
 []\OT1/ptm/m/n/9 FirstName Alpher and First-Name Fotheringham-Smythe.
  []
@@ -376,9 +380,7 @@ Underfull \hbox (badness 1132) in paragraph at lines 14--17
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [4322
-
-]
+ [4322]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./fdm.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
@@ -386,9 +388,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 65.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 6207 strings out of 492616
- 89219 string characters out of 6128983
- 184390 words of memory out of 5000000
+ 6210 strings out of 492616
+ 89261 string characters out of 6128983
+ 185390 words of memory out of 5000000
  10013 multiletter control sequences out of 15000+600000
  23203 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -398,10 +400,10 @@ exlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on fdm.pdf (2 pages, 59847 bytes).
+Output written on fdm.pdf (2 pages, 60166 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 51 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
