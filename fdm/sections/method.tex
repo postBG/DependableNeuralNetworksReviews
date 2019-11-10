@@ -2,8 +2,7 @@
 In DG, we assume that there are $n$ source domains $\D = \{\D_1, \D_2, \dots, \D_n\}$ where $\D_i$ indicates $i$-th source domain which contains sample-label pairs $\{x_i^j, y_i^j\}$. Using the source domains, we try to learn a model that generalizes well to unseen target domain $\D_t$. We use a model $h$ consists of a feature extractor $g$ and a classifier $f$. 
 
 \subsection{Deep-All Method}
-The deep-all method is a simple but effective baseline. In this method, we just aggregate all examples of source domains and train the model using the aggregated samples. If we work on a classification task, we can use cross-entropy loss as follows:
-
+The Deep-All Method is a simple but effective baseline. In this method, we just aggregate all examples of source domains and train the model using the aggregated samples. If we work on a classification task, we can use cross-entropy loss as follows:
 \begin{equation}
 \label{eq:agg}
 \begin{aligned}
@@ -12,4 +11,22 @@ L_{all} = \underset{g, f}{\operatorname{argmin}}~ \mathbb{E}_{\D_s\sim\D} \big[ 
 \end{equation}
 where $\mathbf{y}_i$ is a one-hot vector representation of $y_i$
 
-\subsection{Class-wise Feature Distribution Matching Method}
+\subsection{Class-wise Feature Distribution Matching Regularization}
+We propose a consistency loss called Class-wise Feature Distribution Matching Regularization (\textit{FDM}), which tries to make a model generate similar features when the labels are the same. The FDM loss is calculated as follows: For each iteration, the feature extractor produces features of the source domains. After that, we calculate the averages of the features by classes for reducing the variance. Lastly, the FDM loss is calculated as a consistency loss between the averages and the features that share the same label. The FDM loss is defined as follows:
+\begin{equation}
+\label{eq:fdm}
+\begin{aligned}
+L_{fdm} = \underset{f}{\operatorname{argmin}}~ \mathbb{E}_{\D_s\sim\D} \big[ \mathbb{E}_{\mathbf{x}_i,y_i\sim \mathcal{D}_s} \big[  \mathbb{D}_{KL}(f(\mathbf{x}_i)|| \mathbf{m}_{y_i}) \big] \big]
+\end{aligned}
+\end{equation}
+where $\mathbb{D}_{KL}(\cdot || \cdot)$ represents Kullback–Leibler divergence and $\mathbf{m}_{y_i}$ is the average feature of class $y_i$. For simplicity, $\mathbf{m}_{y_i}$ is calculated for each batch.
+
+Finally, overall loss function is defined as a weighted sum of $L_{add}$ and $L_{fdm}$ as follows:
+\begin{equation}
+\label{eq:overall}
+\begin{aligned}
+L = L_{all} + \lambda L_{fdm}
+\end{aligned}
+\end{equation}
+where $\lambda$ is a hyperparameter that controlls the magnitude between the two losses.
+

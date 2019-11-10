@@ -27,7 +27,7 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{Class-wise Feature Distribution Matching for Domain Generalization}
+\title{Class-wise Feature Distribution Matching Regularization for Domain Generalization}
 
 \author{Seungmin Lee\\
 Seoul National University\\
@@ -44,7 +44,7 @@ Seoul National University\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
- Domain generalization (\textit{DG}) aims to learn a model that generalizes well to an unseen domain (\textit{target domain}), which has a different distribution than known domains (\textit{source domain}). Many of the previous works try to learn domain-invariant features. These methods adopt a loss that tries to match the whole distributions of the source domains. However, these works are sub-optimal because they rarely utilize task-specific information, such as class labels. For concerning the information, we propose a simple but effective regularizing method. The proposed method attempts to match the feature distributions of the same classes. By doing this, a model is expected to learn more task-specific and robust features than the previous works.
+ Domain generalization (\textit{DG}) aims to learn a model that generalizes well to an unseen domain (\textit{target domain}), which has a different distribution than known domains (\textit{source domain}). Many of the previous works try to learn domain-invariant features. These methods adopt a loss that tries to match the whole distributions of the source domains. However, these works are sub-optimal because they rarely utilize task-specific information, such as class labels. For concerning the information, we propose a simple but effective regularizing method called Class-wise Feature Distribution Matching (\textit{FDM}). The proposed method attempts to induce the network to produce similar features when the labels are the same. By doing this, a model is expected to learn more task-specific and robust features than the previous works.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
