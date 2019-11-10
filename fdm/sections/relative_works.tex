@@ -1,4 +1,9 @@
-\subsection{Multi-Source Domain Adaptation}
+\subsection{Multi-Domain Learning and Multi-Source Domain Adaptation}
+The primary purpose of Multi-Domain Learning (\textit{MDL}) is to learn a single model that can compactly represent all domains with a smaller number of parameters~\cite{}. For this purpose, Bilen~\etal~\cite{} adopts shared model parameters except for batch normalization parameters and instance normalization parameters. Rebuffi~\etal~\cite{} transforms the standard residual network architecture to share a significant amount of parameters between different domains.
+
+Multi-Source Domain Adaptation (\textit{MSDA}) also uses a set of domains, but it additionally utilizes the images of an unlabeled target domain~\cite{}. The main focus of MSDA is to train a model that works well on the target domain without labels of it. Even though many studies have been conducted on single-source domain adaptation, there are a limited number of researches on MSDA~\cite{}. Chang~\etal~\cite{} proposes a domain-specific batch normalization with shared weights parameters and extends their method to MSDA. Peng~\etal~\cite{} suggests reducing moment distances between different domains. The moment distance measures the difference between feature distributions of two domains without concerning the task at hand.
+
+MDL and MSDA are closely related to DG since DG also utilizes many sources in many cases. However, DG is different from MDL in that the primary focus of the DG is to learn semantic and domain-invariant features, not to learn compact representations. Moreover, DG is more challenging than MSDA because DG can not utilize the target domain in training.
 
 
-\subsection{Domain Adaptation and Generalization}
+\subsection{Domain Generalization}
