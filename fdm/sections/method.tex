@@ -1,5 +1,15 @@
 \subsection{Problem Setting and Notation}
+In DG, we assume that there are $n$ source domains $\D = \{\D_1, \D_2, \dots, \D_n\}$ where $\D_i$ indicates $i$-th source domain which contains sample-label pairs $\{x_i^j, y_i^j\}$. Using the source domains, we try to learn a model that generalizes well to unseen target domain $\D_t$. We use a model $h$ consists of a feature extractor $g$ and a classifier $f$. 
 
 \subsection{Deep-All Method}
+The deep-all method is a simple but effective baseline. In this method, we just aggregate all examples of source domains and train the model using the aggregated samples. If we work on a classification task, we can use cross-entropy loss as follows:
+
+\begin{equation}
+\label{eq:agg}
+\begin{aligned}
+L_{all} = \underset{g, f}{\operatorname{argmin}}~ \mathbb{E}_{\D_s\sim\D} \big[ \mathbb{E}_{\mathbf{x}_i,y_i\sim \mathcal{D}_s} \big[  {\mathbf{y}_i}^{T} \log h(\mathbf{x}_i) \big] \big]
+\end{aligned}
+\end{equation}
+where $\mathbf{y}_i$ is a one-hot vector representation of $y_i$
 
 \subsection{Class-wise Feature Distribution Matching Method}
