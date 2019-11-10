@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  10 NOV 2019 02:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  10 NOV 2019 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,18 +359,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 
-(./sections/intro.tex)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
- [4321{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 214--220
-
- []
-
-[4322] [4323] [4324] (./fdm.bbl
+(./sections/intro.tex) (./sections/relative_works.tex) (./fdm.bbl
 Underfull \hbox (badness 2376) in paragraph at lines 9--12
 []\OT1/ptm/m/n/9 FirstName Alpher and First-Name Fotheringham-Smythe.
  []
@@ -381,41 +370,35 @@ Underfull \hbox (badness 1132) in paragraph at lines 14--17
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
- [4325
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+ [4321{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
- (./fdm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 437.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+
+(./fdm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 6262 strings out of 492616
- 89763 string characters out of 6128983
- 186783 words of memory out of 5000000
- 10042 multiletter control sequences out of 15000+600000
- 35088 words of font info for 82 fonts, out of 8000000 for 9000
+ 6202 strings out of 492616
+ 89155 string characters out of 6128983
+ 184390 words of memory out of 5000000
+ 10013 multiletter control sequences out of 15000+600000
+ 23203 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,27p,1001b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,9n,27p,998b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on fdm.pdf (5 pages, 143494 bytes).
+exlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on fdm.pdf (1 page, 55428 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 42 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
