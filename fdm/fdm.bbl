@@ -1,29 +1,58 @@
-\begin{thebibliography}{1}\itemsep=-1pt
+\begin{thebibliography}{10}\itemsep=-1pt
 
-\bibitem{Alpher02}
-FirstName Alpher.
-\newblock Frobnication.
-\newblock {\em Journal of Foo}, 12(1):234--778, 2002.
+\bibitem{NIPS2018_metareg}
+Yogesh Balaji, Swami Sankaranarayanan, and Rama Chellappa.
+\newblock Metareg: Towards domain generalization using meta-regularization.
+\newblock In {\em NeurIPS}, 2018.
 
-\bibitem{Alpher03}
-FirstName Alpher and FirstName Fotheringham-Smythe.
-\newblock Frobnication revisited.
-\newblock {\em Journal of Foo}, 13(1):234--778, 2003.
+\bibitem{bousmalis2016domain}
+Konstantinos Bousmalis, George Trigeorgis, Nathan Silberman, Dilip Krishnan,
+  and Dumitru Erhan.
+\newblock Domain separation networks.
+\newblock In {\em NIPS}, 2016.
 
-\bibitem{Alpher04}
-FirstName Alpher, FirstName Fotheringham-Smythe, and FirstName Gamow.
-\newblock Can a machine frobnicate?
-\newblock {\em Journal of Foo}, 14(1):234--778, 2004.
+\bibitem{ganin2016dann}
+Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo
+  Larochelle, Fran{\c{c}}ois Laviolette, Mario Marchand, and Victor Lempitsky.
+\newblock Domain-adversarial training of neural networks.
+\newblock {\em JMLR}, 2016.
 
-\bibitem{Authors14}
-Authors.
-\newblock The frobnicatable foo filter, 2014.
-\newblock Face and Gesture submission ID 324. Supplied as additional material
-  {\tt fg324.pdf}.
+\bibitem{Ghifary2015mtae}
+Muhammad Ghifary, W.~Bastiaan Kleijn, Mengjie Zhang, and David Balduzzi.
+\newblock Domain generalization for object recognition with multi-task
+  autoencoders.
+\newblock In {\em ICCV}, 2015.
 
-\bibitem{Authors14b}
-Authors.
-\newblock Frobnication tutorial, 2014.
-\newblock Supplied as additional material {\tt tr.pdf}.
+\bibitem{Li2017dg}
+Da Li, Yongxin Yang, Yi-Zhe Song, and Timothy Hospedales.
+\newblock Deeper, broader and artier domain generalization.
+\newblock In {\em ICCV}, 2017.
+
+\bibitem{Li2018MLDG}
+Da Li, Yongxin Yang, Yi-Zhe Song, and Timothy Hospedales.
+\newblock Learning to generalize: Meta-learning for domain generalization.
+\newblock In {\em AAAI}, 2018.
+
+\bibitem{li2019episodic}
+Da Li, Jianshu Zhang, Yongxin Yang, Cong Liu, Yi-Zhe Song, and Timothy~M.
+  Hospedales.
+\newblock Episodic training for domain generalization, 2019.
+
+\bibitem{Massimiliano2018ICIP}
+Massimiliano Mancini, Samuel~Rota Bulo`, Barbara Caputo, and Elisa Ricci.
+\newblock Best sources forward: Domain generalization through source-specific
+  nets.
+\newblock In {\em ICIP}, 2018.
+
+\bibitem{muandet2013domaingeneralization}
+Krikamol Muandet, David Balduzzi, and Bernhard Sch{\"o}lkopf.
+\newblock Domain generalization via invariant feature representation.
+\newblock In {\em ICML}, 2013.
+
+\bibitem{shankar2018generalizing}
+Shiv Shankar, Vihari Piratla, Soumen Chakrabarti, Siddhartha Chaudhuri, Preethi
+  Jyothi, and Sunita Sarawagi.
+\newblock Generalizing across domains via cross-gradient training.
+\newblock In {\em ICLR}, 2018.
 
 \end{thebibliography}

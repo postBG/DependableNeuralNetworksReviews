@@ -1,0 +1,23 @@
+To demonstrate the effectiveness of the proposed method, we conduct experiments on PACS dataset~\cite{} using AlexNet~\cite{}. We follow the experiment protocol of Li~\etal~\cite{}. We use a batch size 512, and $\lambda$ is fixed to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the proposed method improves the performance of the model. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
+
+\begin{table*}[t]
+	\centering
+	\scalebox{0.7}{
+		\begin{tabular}{cc|cccccccccc|cc}
+			\toprule
+			Source & Target & D-MTAE~\cite{Ghifary2015mtae} & DSN~\cite{bousmalis2016domain} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & TF-CNN~\cite{Li2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Fusion~\cite{Massimiliano2018ICIP} & Epi-FCR~\cite{li2019episodic} &  AGG & FDM \\
+			\midrule
+			C,P,S&A& 60.3& 61.1 & 61.0 & 64.6& 63.2 & 62.9& 63.5 & \textbf{66.2} & 64.1& 64.7 & 60.4 & 63.0 \\
+			A,P,S&C& 58.7& 66.5 & 67.2 & 64.5 & 67.5 & 67.0&  69.5 & 66.9& 66.8& \textbf{72.3} & 70.2 & 73.1\\
+			A,C,S&P& 91.1 & 83.3 & 87.6 & \textbf{91.8} & 88.1& 89.5&  87.4 & 88.0 & 90.2 & 86.1 & 85.3 & 87.4 \\
+			A,C,P&S& 47.9& 58.6 & 55.9 & 51.1 & 57.0 & 57.5& 59.1 & 59.0 & 60.1& \textbf{65.0} & 60.9 & 62.3 \\
+			\midrule
+			\multicolumn{2}{c|}{Ave.}& 64.5 &67.4 &  67.9 & 68.0& 69.0& 69.2& 69.9 & 70.0 & 70.3&  \textbf{72.0}& 69.2 & 71.5\\
+			\bottomrule
+	\end{tabular}}
+	\vspace{-0.3cm}
+	\caption{\small Cross-domain object recognition results (accuracy. \%) of different methods on PACS using pretrained AlexNet. Best in bold.}
+	\vspace{-0.4cm}
+	% \vspace{-0.4cm}
+	\label{tab:agg-alex}
+\end{table*}
