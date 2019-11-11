@@ -1,4 +1,6 @@
-To demonstrate the effectiveness of the proposed method, we conduct experiments on PACS dataset~\cite{Li2017dg} using AlexNet~\cite{}. We follow the experiment protocol of Li~\etal~\cite{Li2017dg}. We use a batch size 512, and $\lambda$ is set to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the Deep-All works better than many previous works, as Li~\etal~\cite{li2019episodic} mentioned before. Nevertheless, the proposed method improves the performance of the Deep-All baseline. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
+To demonstrate the effectiveness of the proposed method, we conduct an experiment on PACS dataset~\cite{Li2017dg} using AlexNet~\cite{Krizhevsky2012}. We follow the experiment protocol of Li~\etal~\cite{Li2017dg}. We use a batch size 512, and $\lambda$ is set to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the Deep-All works better than many previous works, as Li~\etal~\cite{li2019episodic} mentioned before.
+
+Nevertheless, the proposed method improves the performance of the Deep-All baseline. Furthermore, the proposed method shows better performance than the methods using MMD contraints~\cite{Ghifary2015mtae, muandet2013domaingeneralization}. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
 
 \begin{table*}[t]
 	\centering
