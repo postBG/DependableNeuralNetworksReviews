@@ -17,6 +17,12 @@ Konstantinos Bousmalis, George Trigeorgis, Nathan Silberman, Dilip Krishnan,
 \newblock Domain separation networks.
 \newblock In {\em NeurIPS}, 2016.
 
+\bibitem{carlucci2019domain}
+Fabio~Maria Carlucci, Antonio D'Innocente, Silvia Bucci, Barbara Caputo, and
+  Tatiana Tommasi.
+\newblock Domain generalization by solving jigsaw puzzles.
+\newblock In {\em CVPR}, 2019.
+
 \bibitem{Chang2019cvpr}
 Woong-Gi Chang, Tackgeun You, Seonguk Seo, Suha Kwak, and Bohyung Han.
 \newblock Domain specific batch normalization for unsupervised domain

@@ -5,14 +5,14 @@ To demonstrate the effectiveness of the proposed method, we conduct experiments 
 	\scalebox{0.7}{
 		\begin{tabular}{cc|cccccccccc|cc}
 			\toprule
-			Src. & Trgt. & D-MTAE~\cite{Ghifary2015mtae} & DSN~\cite{bousmalis2016domain} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & TF-CNN~\cite{Li2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Fusion~\cite{Massimiliano2018ICIP} & Epi-FCR~\cite{li2019episodic} & Deep-All & FDM \\
+			Src. & Trgt. & D-MTAE~\cite{Ghifary2015mtae} & DSN~\cite{bousmalis2016domain} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & TF-CNN~\cite{Li2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Epi-FCR~\cite{li2019episodic} & JiGen~\cite{carlucci2019domain} & Deep-All & FDM \\
 			\midrule
-			C,P,S&A& 60.3& 61.1 & 61.0 & 64.6& 63.2 & 62.9& 63.5 & \textbf{66.2} & 64.1& 64.7 & 60.4 & 61.7 \\
-			A,P,S&C& 58.7& 66.5 & 67.2 & 64.5 & 67.5 & 67.0&  69.5 & 66.9& 66.8& \textbf{72.3} & 70.2 & 73.1\\
-			A,C,S&P& 91.1 & 83.3 & 87.6 & \textbf{91.8} & 88.1& 89.5&  87.4 & 88.0 & 90.2 & 86.1 & 85.3 & 87.4 \\
-			A,C,P&S& 47.9& 58.6 & 55.9 & 51.1 & 57.0 & 57.5& 59.1 & 59.0 & 60.1& \textbf{65.0} & 61.6 & 62.3 \\
+			C,P,S&A& 60.3& 61.1 & 61.0 & 64.6& 63.2 & 62.9& 63.5 & 66.2 & 64.7 & \textbf{67.6} & 60.4 & 61.7 \\
+			A,P,S&C& 58.7& 66.5 & 67.2 & 64.5 & 67.5 & 67.0&  69.5 & 66.9& 72.3 & 71.7 & 70.2 & \textbf{73.1}\\
+			A,C,S&P& 91.1 & 83.3 & 87.6 & \textbf{91.8} & 88.1& 89.5&  87.4 & 88.0 & 86.1 & 89.0 & 85.3 & 87.4 \\
+			A,C,P&S& 47.9& 58.6 & 55.9 & 51.1 & 57.0 & 57.5& 59.1 & 59.0 & 65.0 & \textbf{65.2} & 61.6 & 62.3 \\
 			\midrule
-			\multicolumn{2}{c|}{Ave.}& 64.5 &67.4 &  67.9 & 68.0& 69.0& 69.2& 69.9 & 70.0 & 70.3&  \textbf{72.0}& 69.4 & 71.1\\
+			\multicolumn{2}{c|}{Ave.}& 64.5 &67.4 &  67.9 & 68.0& 69.0& 69.2& 69.9 & 70.0 & 72.0 & \textbf{73.4} & 69.4 & 71.1\\
 			\bottomrule
 	\end{tabular}}
 	\vspace{-0.3cm}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  11 NOV 2019 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  11 NOV 2019 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,7 +477,7 @@ Underfull \hbox (badness 3679) in paragraph at lines 1--2
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
 
-Overfull \hbox (37.70746pt too wide) in paragraph at lines 17--19
+Overfull \hbox (31.47746pt too wide) in paragraph at lines 17--19
  [][] 
  []
 
@@ -487,17 +487,17 @@ Underfull \hbox (badness 1939) in paragraph at lines 1--75
  []
 
 (./fdm.bbl
-Underfull \hbox (badness 5331) in paragraph at lines 77--80
+Underfull \hbox (badness 5331) in paragraph at lines 83--86
 []\OT1/ptm/m/n/9 Da Li, Yongxin Yang, Yi-Zhe Song, and Tim-o-thy
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 82--85
+Underfull \hbox (badness 5331) in paragraph at lines 88--91
 []\OT1/ptm/m/n/9 Da Li, Yongxin Yang, Yi-Zhe Song, and Tim-o-thy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 []\OT1/ptm/m/n/9 Krikamol Muan-det, David Bal-duzzi, and Bern-hard
  []
 
@@ -513,13 +513,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 8121 strings out of 492616
- 121101 string characters out of 6128983
- 227578 words of memory out of 5000000
- 11839 multiletter control sequences out of 15000+600000
+ 8123 strings out of 492616
+ 121144 string characters out of 6128983
+ 227619 words of memory out of 5000000
+ 11840 multiletter control sequences out of 15000+600000
  27455 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,1456b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,40p,1476b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texl
@@ -536,10 +536,10 @@ exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on fdm.pdf (4 pages, 164486 bytes).
+Output written on fdm.pdf (4 pages, 164676 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 53 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
