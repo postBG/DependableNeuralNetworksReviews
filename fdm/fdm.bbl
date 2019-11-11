@@ -5,11 +5,34 @@ Yogesh Balaji, Swami Sankaranarayanan, and Rama Chellappa.
 \newblock Metareg: Towards domain generalization using meta-regularization.
 \newblock In {\em NeurIPS}, 2018.
 
+\bibitem{Bilen17}
+Hakan Bilen and Andrea Vedaldi.
+\newblock Universal representations: The missing link between faces, text,
+  planktons, and cat breeds.
+\newblock Technical report, 2017.
+
 \bibitem{bousmalis2016domain}
 Konstantinos Bousmalis, George Trigeorgis, Nathan Silberman, Dilip Krishnan,
   and Dumitru Erhan.
 \newblock Domain separation networks.
-\newblock In {\em NIPS}, 2016.
+\newblock In {\em NeurIPS}, 2016.
+
+\bibitem{Chang2019cvpr}
+Woong-Gi Chang, Tackgeun You, Seonguk Seo, Suha Kwak, and Bohyung Han.
+\newblock Domain specific batch normalization for unsupervised domain
+  adaptation.
+\newblock In {\em CVPR}, 2019.
+
+\bibitem{chen2013vlcs}
+Chen Fang, Ye Xu, and Daniel N.~Rockmore.
+\newblock Unbiased metric learning: On the utilization of multiple datasets and
+  web images for softening bias.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{ganin2015unsupervised}
+Yaroslav Ganin and Victor Lempitsky.
+\newblock Unsupervised domain adaptation by backpropagation.
+\newblock In {\em ICML}, 2015.
 
 \bibitem{ganin2016dann}
 Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo
@@ -22,6 +45,33 @@ Muhammad Ghifary, W.~Bastiaan Kleijn, Mengjie Zhang, and David Balduzzi.
 \newblock Domain generalization for object recognition with multi-task
   autoencoders.
 \newblock In {\em ICCV}, 2015.
+
+\bibitem{Girshick2014}
+Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{guo2018-multi}
+Jiang Guo, Darsh Shah, and Regina Barzilay.
+\newblock Multi-source domain adaptation with mixture of experts.
+\newblock In {\em EMNLP}, 2018.
+
+\bibitem{He2016resnet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em CVPR}, 2016.
+
+\bibitem{Khosla12undobias}
+Aditya Khosla, Tinghui Zhou, Tomasz Malisiewicz, Alexei Efros, and Antonio
+  Torralba.
+\newblock Undoing the damage of dataset bias.
+\newblock In {\em ECCV}, 2012.
+
+\bibitem{Krizhevsky2012}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolution neural networks.
+\newblock In {\em NeurIPS}, 2012.
 
 \bibitem{Li2017dg}
 Da Li, Yongxin Yang, Yi-Zhe Song, and Timothy Hospedales.
@@ -38,21 +88,84 @@ Da Li, Jianshu Zhang, Yongxin Yang, Cong Liu, Yi-Zhe Song, and Timothy~M.
   Hospedales.
 \newblock Episodic training for domain generalization, 2019.
 
+\bibitem{mmdaaecvpr2018}
+Haoliang Li, Sinno Jialin~Pan, Shiqi Wang, and Alex C~Kot.
+\newblock Domain generalization with adversarial feature learning.
+\newblock In {\em CVPR}, 2018.
+
+\bibitem{Shelhamer2017}
+Jonathan Long, Evan Shelhamer, and Trevor Darrell.
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock {\em IEEE TPAMI}, 2017.
+
 \bibitem{Massimiliano2018ICIP}
 Massimiliano Mancini, Samuel~Rota Bulo`, Barbara Caputo, and Elisa Ricci.
 \newblock Best sources forward: Domain generalization through source-specific
   nets.
 \newblock In {\em ICIP}, 2018.
 
+\bibitem{motiian2017CCSA}
+Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
+\newblock Unified deep supervised domain adaptation and generalization.
+\newblock In {\em ICCV}, 2017.
+
 \bibitem{muandet2013domaingeneralization}
 Krikamol Muandet, David Balduzzi, and Bernhard Sch{\"o}lkopf.
 \newblock Domain generalization via invariant feature representation.
 \newblock In {\em ICML}, 2013.
+
+\bibitem{peng2018moment}
+Xingchao Peng, Qinxun Bai, Xide Xia, Zijun Huang, Kate Saenko, and Bo Wang.
+\newblock Moment matching for multi-source domain adaptation.
+\newblock In {\em ICCV}, 2018.
+
+\bibitem{Rebuffi17}
+Sylvestre-Alvise Rebuffi, Hakan Bilen, and Andrea Vedaldi.
+\newblock Learning multiple visual domains with residual adapters.
+\newblock In {\em NeurIPS}, 2017.
+
+\bibitem{Rebuffi18}
+Sylvestre-Alvise Rebuffi, Hakan Bilen, and Andrea Vedaldi.
+\newblock Efficient parametrization of multi-domain deep neural networks.
+\newblock In {\em CVPR}, 2018.
+
+\bibitem{Ren2017}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock Faster {R-CNN}: Towards real-time object detection with region
+  proposal networks.
+\newblock {\em IEEE TPAMI}, 2017.
+
+\bibitem{Saito2018b}
+Kuniaki Saito, Yoshitaka Ushiku, Tatsuya Harada, and Kate Saenko.
+\newblock Adversarial dropout regularization.
+\newblock In {\em ICLR}, 2018.
+
+\bibitem{Saito2018}
+Kuniaki Saito, Kohei Watanabe, Yoshitaka Ushiku, and Tatsuya Harada.
+\newblock Maximum classifier discrepancy for unsupervised domain adaptation.
+\newblock In {\em CVPR}, 2018.
 
 \bibitem{shankar2018generalizing}
 Shiv Shankar, Vihari Piratla, Soumen Chakrabarti, Siddhartha Chaudhuri, Preethi
   Jyothi, and Sunita Sarawagi.
 \newblock Generalizing across domains via cross-gradient training.
 \newblock In {\em ICLR}, 2018.
+
+\bibitem{Shimodaira2000}
+Hidetoshi Shimodaira.
+\newblock Improving predictive inference under covariate shift by weighting the
+  log-likelihood function.
+\newblock {\em JSPI}, 2000.
+
+\bibitem{yang2015mdlmtl}
+Yongxin Yang and Timothy~M. Hospedales.
+\newblock A unified perspective on multi-domain and multi-task learning.
+\newblock In {\em ICLR}, 2015.
+
+\bibitem{Zhao2018NIPS}
+Han Zhao, Shanghang Zhang, Guanhang Wu, Jos\'{e} M.~F. Moura, Joao~P Costeira,
+  and Geoffrey~J Gordon.
+\newblock Adversarial multiple source domain adaptation.
+\newblock In {\em NeurIPS}. 2018.
 
 \end{thebibliography}

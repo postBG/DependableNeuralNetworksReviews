@@ -3,44 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdm.aux
 The style file: ieee_fullname.bst
 Database file #1: egbib.bib
-You've used 10 entries,
+Warning--empty institution in Bilen17
+Warning--empty publisher in Zhao2018NIPS
+You've used 31 entries,
             2120 wiz_defined-function locations,
-            546 strings with 5400 characters,
-and the built_in function-call counts, 3509 in all, are:
-= -- 281
-> -- 265
+            631 strings with 8431 characters,
+and the built_in function-call counts, 10122 in all, are:
+= -- 833
+> -- 702
 < -- 0
-+ -- 104
-- -- 94
-* -- 247
-:= -- 616
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 77
++ -- 276
+- -- 244
+* -- 669
+:= -- 1762
+add.period$ -- 93
+call.type$ -- 31
+change.case$ -- 216
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 129
-empty$ -- 264
-format.name$ -- 94
-if$ -- 706
+cite$ -- 33
+duplicate$ -- 406
+empty$ -- 806
+format.name$ -- 244
+if$ -- 2065
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 9
-newline$ -- 52
-num.names$ -- 20
-pop$ -- 114
+int.to.str$ -- 31
+missing$ -- 29
+newline$ -- 157
+num.names$ -- 62
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 184
 quote$ -- 0
-skip$ -- 70
+skip$ -- 216
 stack$ -- 0
-substring$ -- 50
-swap$ -- 18
+substring$ -- 156
+swap$ -- 54
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
-warning$ -- 0
-while$ -- 20
-width$ -- 12
-write$ -- 100
+type$ -- 124
+warning$ -- 2
+while$ -- 62
+width$ -- 33
+write$ -- 310
+(There were 2 warnings)
