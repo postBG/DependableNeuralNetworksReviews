@@ -1,0 +1,68 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{dependable_dnn}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\D}{\mathcal{D}}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\iccvfinalcopy % *** Uncomment this line for the final submission
+
+\def\iccvPaperID{} % *** Enter the Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ificcvfinal\pagestyle{empty}\fi
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{Rethinking the Value of Network Pruning
+	 \\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
+
+\maketitle
+\thispagestyle{empty}
+
+%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Introduction}
+Network pruning is a way of reducing the size of deep neural networks. 
+Network pruning methods can be classified into two categories: unstructured pruning and structured pruning. Unstructured pruning prunes a network at the level of individual weights. Otherwise, structured pruning prunes a model at a higher level like channels.
+
+The typical process of network pruning consists of three steps: First, train an over-parameterized neural network on a training dataset.  Second, prune the pre-trained network by removing the weights or channels that have small values. Finally, fine-tuning the pruned network (also called target architecture) on the dataset. In this step, the pruned network is typically initialized using the remaining weights of the larger network. 
+
+This paper argues the last step is not significant in \textbf{structured pruning}. This claim means the performance of the target network using random initialization can recover the performance of the target network updated using fine-tuning. The paper demonstrated its thought using carefully designed experiments. 
+ 
+%%%%%%%%%%%%%%%%%
+\section{Experiments Setting}
+\paragraph{Network Architectures, Datasets and Pruning Methods}
+The authors used ResNet, VGG, and DenseNet as the architectures for experiments. For datasets, they used CIFAR-10, CIFAR100, and ImageNet. For pruning methods, they chose four predefined structured methods (Li~\etal~\cite{Li2017}, Luo~\etal~\cite{Luo2017}, He~\etal~\cite{He2017b}, He~\etal~\cite{He2018a}), two automatic structured methods (Liu~\etal~\cite{Liu2017}, Huang~\etal~\cite{Huang2018}) and one unstructured method (Han~\etal~\cite{Han2015}). For predefined structure methods, a human defines pruning rates of each layer. Otherwise, for automatic structured methods, the pruning algorithm automatically determines pruning rates of each layer. In other words, unlike predefined ones, pruning rates of each layer can be changed for each run. 
+
+\paragraph{Training Budget}
+The authors used two types of training budgets: \textbf{Scratch-E} and \textbf{Scratch-B}. In Scratch-B, they used the same number of epochs for both models with random initialization and fine-tuning. However, the authors claimed the Scratch-B could be unfair to the pruned networks because the pruned models consume smaller computations for each epoch. Therefore, they also used Scratch-B in their experiments, which concerns FLOPs. For example, if a pruned model saved 2xFLOPs, the authors doubled the number of epochs.
+
+\section{Results}
+There are many numbers in this paper. In this section, I summarize the results that the results show. First, the Scratch-B almost always shows better results than the Scratch-E. When the Scratch-E shows better results, the margin between them was small. The authors practically always could achieve better or comparable performances for the structured pruning algorithms, often with large margins. Otherwise, for the unstructured pruning method, the authors also could make better performances (with small margins) but not as often as the experiments on structured ones. These results show initializing the weights with the over-parameterized models' weights is not critical in the structured pruning. Moreover, the results show that the found architecture could be more crucial than the typical pruning steps.
+
+\section{Personal Memo}
+The last step is not more than typical pre-training and fine-tuning. Therefore, if these results are accurate, what we should rethink is pre-training. If we could find the pre-training is not meaningful, it would be interesting. Anyway, even if the results are accurate, the last step in the process still has meaning since it is helpful to faster convergence. 
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
