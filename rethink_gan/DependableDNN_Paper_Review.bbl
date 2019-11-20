@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Han2015}
+S.~Han, et~al.
+\newblock Learning both weights and connections for efficient neural network.
+\newblock In {\em NIPS}, 2015.
+
+\bibitem{He2018a}
+Y.~He, et~al.
+\newblock Soft filter pruning for accelerating deep convolutional neural
+  networks.
+\newblock In {\em IJCAI}, 2018.
+
+\bibitem{He2017b}
+Y.~He, et~al.
+\newblock Channel pruning for accelerating very deep neural networks.
+\newblock In {\em ICCV}, 2017.
+
+\bibitem{Huang2018}
+Z.~Huang et~al.
+\newblock Learning efficient convolutional networks through network slimming.
+\newblock In {\em ECCV}, 2018.
+
+\bibitem{Li2017}
+H.~Li, et~al.
+\newblock Pruning filters for efficient convnets.
+\newblock In {\em ICLR}, 2017.
+
+\bibitem{Liu2017}
+Z.~Liu, et~al.
+\newblock Learning efficient convolutional networks through network slimming.
+\newblock In {\em ICCV}, 2017.
+
+\bibitem{Luo2017}
+J.-H. Luo, et~al.
+\newblock Thinet: A filter level pruning method for deep neural network
+  compression.
+\newblock In {\em ICCV}, 2017.
+
+\end{thebibliography}
