@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Inevit1}
+A.~Fawzi, et~al.
+\newblock Adversarial vulnerability for any classifier.
+\newblock In {\em NeurIPS}, 2018.
+
+\bibitem{Inevit2}
+A.~Shafahi, et~al.
+\newblock Are adversarial examples inevitable?
+\newblock In {\em CoRR, abs/1809.02104}, 2018.
+
+\end{thebibliography}

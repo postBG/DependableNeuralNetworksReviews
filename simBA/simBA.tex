@@ -1,0 +1,65 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{dependable_dnn}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\D}{\mathcal{D}}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\iccvfinalcopy % *** Uncomment this line for the final submission
+
+\def\iccvPaperID{} % *** Enter the Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ificcvfinal\pagestyle{empty}\fi
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{Simple Black-box Adversarial Attacks
+	 \\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
+
+\maketitle
+\thispagestyle{empty}
+
+%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Motivation}
+Even though white-box attack methods have shown their effectiveness, these methods are impractical in that they require the architectures of target models. On the other hand, black-box attack methods are more applicable because they do not assume the knowledge of target models and only utilize an output distribution. However, the black-box attack methods also should minimize the number of queries needed to create a successful adversarial image. Therefore, finding an effective black-box attack method is still an open problem. Previous works try to tackle the black-box attack with some complex procedures such as training proxy models. This paper, on the other hand, suggests a simple and effective algorithm inspired by the fact that the vulnerability is inevitable in high-dimensional spaces with some reasonable assumptions~\cite{Inevit1, Inevit2}.
+
+\section{Notations}
+The \textit{untargeted} black-box attack can be formulated as the following optimization problem:
+\begin{align}\label{eq}
+\arg\min_{\delta} \mathcal{S}_y(\mathbf{x} + \delta) \text{  subject to:  } \|\delta\|_2 < \rho, \text{ quires} \leq B
+\end{align}
+where $\mathcal{S}_y(\cdot)$ is a confidence of a model $h$ classifiying a input as $y$, $\delta$ is a adversarial pertubation that the norm of it is bounded by $\rho$, and $B$ is a query limit. Similarly, we can define the \textit{targeted} black-box attack as $\arg\max_{\delta} \mathcal{S}_{y'}(\mathbf{x} + \delta)$ where $y \neq y'$. For the sake of simplicity, I will focus on the untargeted black-box attack.
+
+\section{Proposed Method}
+The proposed method is based on the previous studies that the vulnerability of a model is in high-dimensional spaces~\cite{Inevit1, Inevit2}. These prior studies mean merely adding a set of orthogonal vectors to an image can make an adversarial example. Therefore, for each iteration, the proposed method samples a vector from a basis and add it to an input image by multiplying a small step size $\epsilon$. Then, the method queries the modified image to the target model to get a confidence change. If the confidence becomes lower, the modified image is maintained. Otherwise, the method rollbacks the perturbation and tries another perturbation by sampling another vector from the basis. The proposed method repeats the iteration until the output label is changed or until it runs out of the budget.
+
+\section{Results}
+The proposed method tests its effectiveness using a cartesian basis and discrete cosine basis. The cartesian basis is simply sampling one pixel of an image and perturbing it. The proposed method shows better results than the previous techniques, even though it is simple.
+
+\section{Personal Memo}
+I think the relation between the proposed method and the white-box methods is similar to the relationship between black-box optimization methods and policy gradient methods in policy-based methods of reinforcement learning. Therefore, I think using other effective black-box optimization methods such as evolutionary strategy or cross-entropy method would be better than the proposed method. I think this is definitely worth a try.
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}

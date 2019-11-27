@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: simBA.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+You've used 2 entries,
+            2143 wiz_defined-function locations,
+            510 strings with 3961 characters,
+and the built_in function-call counts, 651 in all, are:
+= -- 56
+> -- 36
+< -- 0
++ -- 16
+- -- 12
+* -- 37
+:= -- 115
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 28
+empty$ -- 57
+format.name$ -- 12
+if$ -- 135
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 16
+stack$ -- 0
+substring$ -- 10
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 22
