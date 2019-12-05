@@ -43,8 +43,6 @@ Despite the tremendous advances in deep learning, there exists only a limited nu
 CAV is a vector that represents a high-level concept. To calculate CAV, the first thing to do is defining a high-level concept using images. For example, the pictures of zebras can reveal the concept of "striped." After that, train a linear classifier that discriminates the concept's images and random images on the target model's intermediate feature space. Then, the orthogonal vector of the decision boundary is the CAV.
 
 \section{Notations}
-The interpretability can be formulated as a function $g: E_m \rightarrow E_h$, where $E_m$ is a vector space that represents the state of a target model that we try to interpret, and $E_h$ is a vector space that represents human-interpretable concepts. Assume $e_m$ is basis vectors of $E_m$, and $e_h$ is basis vectors of $E_h$. Then, $e_h$ can be understood as unknown human concepts. 
-
 Assume there is a model that inputs an image $\mathbf{x} \in \mathbb{R}^n$, and the model consists of an encoder $f_l: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and a decoder $h_{l, k}: \mathbb{R}^m \rightarrow \mathbb{R}$ mapping features to $k$-th class.
 
 \section{Proposed Method}
@@ -53,18 +51,28 @@ In this section, the details of the proposed method will be explained.
 As mentioned before, the concept of interest is defined using a set of images. Therefore, the user can specify a new concept without knowledge of ML. Formally, a concept of interest $C$ (e.g., dotted) is revealed by $\mathbf{x} \in P_C$ (e.g., photos of dalmatian) and $\mathbf{x} \in N$ (e.g., randomly selected images such as zebra).
 
 \subsection{Calculate CAVs}
-After defining a new concept, train a linear classifier discriminating features of $P_C$ and $N$. Formally, the classifier classifies $\{f_l(\mathbf{x}): \mathbf{x} \in P_C\}$ and $\{f_l(\mathbf{x}): \mathbf{x} \in N\}$. Then, the normal vector of the decision boundary ${\mathbf{v}^{l}}_C$ becomes the CAV of the concept $C$.
+After defining a new concept, train a linear classifier discriminating features of $P_C$ and $N$. Formally, the classifier classifies $\{f_l(\mathbf{x}): \mathbf{x} \in P_C\}$ and $\{f_l(\mathbf{x}): \mathbf{x} \in N\}$. Then, the normal vector of the decision boundary ${\mathbf{v}^{l}}_C \in \mathbb{R}^m$ becomes the CAV of the concept $C$.
 
-\subsection{Interprete using the CAVs}
+\subsection{Interprete using the CAVs: Conceptual Sensitivity}
+Using CAVs, the model's sensitivity of concepts can be measured. For this, this paper adopts directional derivatives. More specifically, the sensitivity of class $k$ to the concept $C$ at layer $l$ ($S_{C, k, l}$) is defined using the directional derivative as follows:
+\begin{flalign}
+S_{C, k, l}(\mathbf{x}) &= \lim\limits_{\epsilon \rightarrow 0}\frac{h_{l, k}(f_l(\mathbf{x}) + \epsilon{\mathbf{v}^{l}}_C) - h_{l, k}(f_l(\mathbf{x}))}{\epsilon} \\
+&= \nabla h_{l, k}(f_l(\mathbf{x}))\cdot{\mathbf{v}^{l}}_C \nonumber
+\end{flalign}
+This equation represents how fastly confidence will increase if the concept is added. Thus, it can be interpreted as the conceptual sensitivity.
 
-
-
+\subsection{Testing with CAVs (TCAV)}
+The method for measuring conceptual sensitivity can be extended to the entire images of a class. This paper defines this measurement called \textit{Testing with CAVs (TCAV)} as follows:
+\begin{flalign}
+TCAV_{C, k, l} = \frac{|\{\mathbf{x}: \mathbf{x} \in X_k \text{    and    } S_{C, k, l} > 0\}|}{|X_k|}
+\end{flalign}
+where $X_k$ is the entire images of a class $k$. TCAVs can be used for measuring global conceptual sensitivities of the model rather than a single example.
 
 \section{Results}
-
+This paper has conducted experiments such as changing layer $l$, the alignments between the method and human intuition (sort images using various concepts' CAVs).
 
 \section{Personal Memo}
-
+I think the proposed method is simple and easy to use. Defining a concept using images seems a practical idea. However, I wonder whether a linear classifier can always be trainable. If the model's task and a concept are not aligned well, the linear classifier can not be well trained.
 
 {\small
 \bibliographystyle{ieee}
