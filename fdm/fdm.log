@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  19 DEC 2019 01:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  19 DEC 2019 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,7 +494,7 @@ Overfull \hbox (31.47746pt too wide) in paragraph at lines 19--21
  []
 
 
-Overfull \hbox (62.06711pt too wide) in paragraph at lines 43--45
+Overfull \hbox (21.97151pt too wide) in paragraph at lines 43--45
  [][] 
  []
 
@@ -532,7 +532,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 Here is how much of TeX's memory you used:
  8129 strings out of 492616
  121188 string characters out of 6128983
- 235848 words of memory out of 5000000
+ 234848 words of memory out of 5000000
  11843 multiletter control sequences out of 15000+600000
  27455 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -553,10 +553,10 @@ exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on fdm.pdf (4 pages, 165130 bytes).
+Output written on fdm.pdf (4 pages, 165078 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
+ 232 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  56 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
