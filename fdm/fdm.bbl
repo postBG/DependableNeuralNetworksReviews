@@ -104,13 +104,12 @@ Jonathan Long, Evan Shelhamer, and Trevor Darrell.
 \newblock Fully convolutional networks for semantic segmentation.
 \newblock {\em IEEE TPAMI}, 2017.
 
-\bibitem{Massimiliano2018ICIP}
-Massimiliano Mancini, Samuel~Rota Bulo`, Barbara Caputo, and Elisa Ricci.
-\newblock Best sources forward: Domain generalization through source-specific
-  nets.
-\newblock In {\em ICIP}, 2018.
-
 \bibitem{motiian2017CCSA}
+Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
+\newblock Unified deep supervised domain adaptation and generalization.
+\newblock In {\em ICCV}, 2017.
+
+\bibitem{ccsa2017dg}
 Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
 \newblock Unified deep supervised domain adaptation and generalization.
 \newblock In {\em ICCV}, 2017.
@@ -173,5 +172,11 @@ Han Zhao, Shanghang Zhang, Guanhang Wu, Jos\'{e} M.~F. Moura, Joao~P Costeira,
   and Geoffrey~J Gordon.
 \newblock Adversarial multiple source domain adaptation.
 \newblock In {\em NeurIPS}. 2018.
+
+\bibitem{lresvm}
+Li~Niu Zheng~Xu, Wen~Li and Dong Xu.
+\newblock Exploiting low-rank structure from latent domains for domain
+  generalization.
+\newblock In {\em ECCV}, 2014.
 
 \end{thebibliography}

@@ -3,47 +3,51 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: fdm.aux
 The style file: ieee_fullname.bst
 Database file #1: egbib.bib
+Name 1 in "Zheng Xu, Wen Li, Li Niu, and Dong Xu" has a comma at the end for entry lresvm
+while executing---line 1079 of file ieee_fullname.bst
 Warning--empty institution in Bilen17
 Warning--empty publisher in Zhao2018NIPS
-You've used 32 entries,
+Name 1 in "Zheng Xu, Wen Li, Li Niu, and Dong Xu" has a comma at the end for entry lresvm
+while executing---line 1122 of file ieee_fullname.bst
+You've used 33 entries,
             2120 wiz_defined-function locations,
-            634 strings with 8596 characters,
-and the built_in function-call counts, 10487 in all, are:
-= -- 862
-> -- 730
+            634 strings with 8610 characters,
+and the built_in function-call counts, 10759 in all, are:
+= -- 885
+> -- 743
 < -- 0
-+ -- 287
-- -- 254
-* -- 695
-:= -- 1825
-add.period$ -- 96
-call.type$ -- 32
-change.case$ -- 224
++ -- 292
+- -- 258
+* -- 708
+:= -- 1870
+add.period$ -- 99
+call.type$ -- 33
+change.case$ -- 229
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 420
-empty$ -- 834
-format.name$ -- 254
-if$ -- 2139
+cite$ -- 35
+duplicate$ -- 434
+empty$ -- 862
+format.name$ -- 258
+if$ -- 2198
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 30
-newline$ -- 162
-num.names$ -- 64
-pop$ -- 333
+int.to.str$ -- 33
+missing$ -- 31
+newline$ -- 167
+num.names$ -- 66
+pop$ -- 342
 preamble$ -- 1
-purify$ -- 191
+purify$ -- 195
 quote$ -- 0
-skip$ -- 223
+skip$ -- 231
 stack$ -- 0
-substring$ -- 161
-swap$ -- 56
+substring$ -- 166
+swap$ -- 58
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
+type$ -- 132
 warning$ -- 2
-while$ -- 64
-width$ -- 34
-write$ -- 320
-(There were 2 warnings)
+while$ -- 66
+width$ -- 35
+write$ -- 330
+(There were 2 error messages)

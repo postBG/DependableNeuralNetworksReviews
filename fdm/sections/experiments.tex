@@ -23,3 +23,49 @@ Nevertheless, the proposed method improves the performance of the Deep-All basel
 	% \vspace{-0.4cm}
 	\label{tab:pacs}
 \end{table*}
+
+\vspace{0.4cm}
+
+\begin{table*}[t]
+	\centering
+	\scalebox{0.7}{
+		\begin{tabular}{cc|ccccccccc|ccc}
+			\toprule
+			Src. & Trgt. & D-MTAE~\cite{Ghifary2015mtae} & LRE-SVM~\cite{lresvm} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & CCSA~\cite{ccsa2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Epi-FCR~\cite{li2019episodic} & Deep-All (\cite{li2019episodic}) & Deep-All & FDM \\
+			\midrule
+			L,C,S&V& 63.9& 60.6 & 65.5 & 63.7& 66.4 & 67.1& 65.0 & 67.7 & 67.1 & 65.4 & 59.7 & 59.3 \\
+			V,C,S&L& 60.1& 59.7 & 60.0 & 58.2 & 64.0 & 62.1&  60.2 & 61.3& 64.3 & 60.6 & 54.1 & 54.3\\
+			V,L,S&C& 89.1 & 88.1 & 92.0 & 79.7 & 92.6& 92.3&  92.3 & 94.4 & 94.1 & 93.1 & 87.7 & 88.0 \\
+			V,L,C&S& 61.3& 54.9 & 64.7 & 61.0 & 63.6 & 59.1& 64.2 & 65.9 & 65.9 & 65.8 & 61.4 & 64.0 \\
+			\midrule
+			\multicolumn{2}{c|}{Ave.}& 68.6 &65.8 &  70.5 & 65.7 & 71.7& 70.2& 70.4 & 72.3 & 72.9 & 71.2 & 65.7 & 66.4\\
+			\bottomrule
+	\end{tabular}}
+	\vspace{-0.3cm}
+	\caption{\small Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.}
+	\vspace{-0.4cm}
+	% \vspace{-0.4cm}
+	\label{tab:vlcs}
+\end{table*}
+
+\begin{table*}[t]
+	\centering
+	\scalebox{0.7}{
+		\begin{tabular}{cc|ccccc|ccc}
+			\toprule
+			Src. & Trgt. & CrossGrad~\cite{shankar2018generalizing}&  DANN~\cite{ganin2016dann} & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Epi-FCR~\cite{li2019episodic} & Deep-All & FDM \\
+			\midrule
+			P,C,S&A&  78.7 & 81.3 & 79.5& 79.5 & 82.1 &  77.3 & 77.7 \\
+			P,A,S&C& 73.3 & 73.8 & 75.4&  77.3 & 77.0& 73.8 & 74.2\\
+			A,C,S&P& 94.0 & 94.0& 94.3&  94.3 & 93.9 & 94.1 & 94.3 \\
+			P,A,C&S& 65.1 & 74.3 & 72.2& 71.5 & 73.0 & 70.8 & 71.7 \\
+			\midrule
+			\multicolumn{2}{c|}{Ave.}& 77.8 & 80.8 & 80.4& 80.7& 81.5  & 79.0 & 79.5 \\
+			\bottomrule
+	\end{tabular}}
+	\vspace{-0.3cm}
+	\caption{\small Cross-domain object classification results (accuracy. \%) on PACS using ResNet-18.}
+	\vspace{-0.4cm}
+	% \vspace{-0.4cm}
+	\label{tab:pacs_resnet}
+\end{table*}
