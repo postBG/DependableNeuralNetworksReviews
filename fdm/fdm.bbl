@@ -29,6 +29,18 @@ Woong-Gi Chang, Tackgeun You, Seonguk Seo, Suha Kwak, and Bohyung Han.
   adaptation.
 \newblock In {\em CVPR}, 2019.
 
+\bibitem{Choi2010sun09}
+Myung~Jin Choi, Joseph Lim, and Antonio Torralba.
+\newblock Exploiting hierarchical context on a large database of object
+  categories.
+\newblock In {\em CVPR}, 2010.
+
+\bibitem{Everingham10}
+Mark Everingham, Luc Van~Gool, Christopher K.~I.~Williams, John Winn, and
+  Andrew. Zisserman.
+\newblock The pascal visual object classes (voc) challenge.
+\newblock {\em IJCV}, 2010.
+
 \bibitem{chen2013vlcs}
 Chen Fang, Ye Xu, and Daniel N.~Rockmore.
 \newblock Unbiased metric learning: On the utilization of multiple datasets and
@@ -45,6 +57,12 @@ Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo
   Larochelle, Fran{\c{c}}ois Laviolette, Mario Marchand, and Victor Lempitsky.
 \newblock Domain-adversarial training of neural networks.
 \newblock {\em JMLR}, 2016.
+
+\bibitem{ghifary2015domain}
+Muhammad Ghifary, W Bastiaan~Kleijn, Mengjie Zhang, and David Balduzzi.
+\newblock Domain generalization for object recognition with multi-task
+  autoencoders.
+\newblock In {\em ICCV}, 2015.
 
 \bibitem{Ghifary2015mtae}
 Muhammad Ghifary, W.~Bastiaan Kleijn, Mengjie Zhang, and David Balduzzi.
@@ -94,6 +112,12 @@ Da Li, Jianshu Zhang, Yongxin Yang, Cong Liu, Yi-Zhe Song, and Timothy~M.
   Hospedales.
 \newblock Episodic training for domain generalization, 2019.
 
+\bibitem{Feifei2004caltech}
+Fei-Fei Li, Fergus Rob, and Perona Pietro.
+\newblock Learning generative visual models from few training examples: an
+  incremental bayesian approach tested on 101 object categories.
+\newblock In {\em CVPR Workshop on Generative-Model Based Vision}, 2004.
+
 \bibitem{mmdaaecvpr2018}
 Haoliang Li, Sinno Jialin~Pan, Shiqi Wang, and Alex C~Kot.
 \newblock Domain generalization with adversarial feature learning.
@@ -105,11 +129,6 @@ Jonathan Long, Evan Shelhamer, and Trevor Darrell.
 \newblock {\em IEEE TPAMI}, 2017.
 
 \bibitem{motiian2017CCSA}
-Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
-\newblock Unified deep supervised domain adaptation and generalization.
-\newblock In {\em ICCV}, 2017.
-
-\bibitem{ccsa2017dg}
 Saeid Motiian, Marco Piccirilli, Donald~A. Adjeroh, and Gianfranco Doretto.
 \newblock Unified deep supervised domain adaptation and generalization.
 \newblock In {\em ICCV}, 2017.
@@ -139,6 +158,11 @@ Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
 \newblock Faster {R-CNN}: Towards real-time object detection with region
   proposal networks.
 \newblock {\em IEEE TPAMI}, 2017.
+
+\bibitem{labelme}
+Bryan~C Russell, Antonio Torralba, Kevin~P Murphy, and William~T Freeman.
+\newblock Labelme: a database and web-based tool for image annotation.
+\newblock {\em IJCV}, 2007.
 
 \bibitem{Saito2018b}
 Kuniaki Saito, Yoshitaka Ushiku, Tatsuya Harada, and Kate Saenko.

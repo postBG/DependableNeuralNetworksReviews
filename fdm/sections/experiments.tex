@@ -1,39 +1,18 @@
-\begin{table*}[t]
-	\centering
-	\scalebox{0.7}{
-		\begin{tabular}{cc|cccccccccc|cc}
-			\toprule
-			Src. & Trgt. & D-MTAE~\cite{Ghifary2015mtae} & DSN~\cite{bousmalis2016domain} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & TF-CNN~\cite{Li2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Epi-FCR~\cite{li2019episodic} & JiGen~\cite{carlucci2019domain} & Deep-All & FDM \\
-			\midrule
-			C,P,S&A& 60.3& 61.1 & 61.0 & 64.6& 63.2 & 62.9& 63.5 & 66.2 & 64.7 & \textbf{67.6} & 60.4 & 61.7 \\
-			A,P,S&C& 58.7& 66.5 & 67.2 & 64.5 & 67.5 & 67.0&  69.5 & 66.9& 72.3 & 71.7 & 70.2 & \textbf{73.1}\\
-			A,C,S&P& 91.1 & 83.3 & 87.6 & \textbf{91.8} & 88.1& 89.5&  87.4 & 88.0 & 86.1 & 89.0 & 85.3 & 87.4 \\
-			A,C,P&S& 47.9& 58.6 & 55.9 & 51.1 & 57.0 & 57.5& 59.1 & 59.0 & 65.0 & \textbf{65.2} & 61.6 & 62.3 \\
-			\midrule
-			\multicolumn{2}{c|}{Ave.}& 64.5 &67.4 &  67.9 & 68.0& 69.0& 69.2& 69.9 & 70.0 & 72.0 & \textbf{73.4} & 69.4 & 71.1\\
-			\bottomrule
-	\end{tabular}}
-	\vspace{-0.3cm}
-	\caption{\small Cross-domain object classification results (accuracy. \%) on PACS using AlexNet.}
-	\vspace{-0.4cm}
-	% \vspace{-0.4cm}
-	\label{tab:pacs}
-\end{table*}
+\subsection{Brief Summary of Datasets}
+In this section, we give summaries of datasets used in our experiments. We use two different object classification datasets: \textbf{VLCS}~\cite{chen2013vlcs} and \textbf{PACS}~\cite{Li2017dg}. VLCS dataset consists of four famous datasets which are PASCAL VOC2007 (V)~\cite{Everingham10}, Labelme (L)~\cite{labelme}, Caltech 101 (C)~\cite{Feifei2004caltech}, and SUN09 (S)~\cite{Choi2010sun09}. Otherwise, PACS are composed of four datasets that have more significant visual domain gaps than those of VLCS. PACS consists of Photo (P), Art painting (A), Cartoon (C), and Sketch (S).
 
-To demonstrate the effectiveness of the proposed method, we conduct an experiment on PACS dataset~\cite{Li2017dg} using AlexNet~\cite{Krizhevsky2012}. We follow the experiment protocol of Li~\etal~\cite{Li2017dg}. We use a batch size 512, and $\lambda$ is set to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the Deep-All works better than many previous works, as Li~\etal~\cite{li2019episodic} mentioned before.
+\subsection{Settings}
+In this section, we evaluate the proposed method on standard DG benchmarks. For datasets, we use PACS~\cite{Li2017dg} and VLCS~\cite{chen2013vlcs}, which are commonly used for demonstrating DG algorithms. For networks, we adopt Alexnet~\cite{Krizhevsky2012} and ResNet-18~\cite{He2016resnet}. We found the architectures of Alexnet~\cite{Krizhevsky2012} used in each paper are different. Thus, we clarify the used structure in this paper is the same as Li~\etal~\cite{li2019episodic}. In each network, we use convolution layers as the feature extractor and fully-connected layers as the classifier. For hyperparameters, we set $\lambda_{max}$ to 0.1 and $T_r$ to 40 for all experiments. We train a model for 100 epochs and use the batch size 512 for all settings. Following the experiments' protocol used in Li~\etal~\cite{Li2017dg}, we evaluate the performance on a validation set during each epoch to get the best model, and we re-evaluate the performance on a test set using the model. We denote the proposed method as FDM in the results tables.
 
-Nevertheless, the proposed method improves the performance of the Deep-All baseline. Furthermore, the proposed method shows better performance than the methods using MMD contraints~\cite{Ghifary2015mtae, muandet2013domaingeneralization}. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
 
-\vspace{0.4cm}
+\subsection{Results on PACS + Alexnet}
+The experimental results on PACS + Alexnet can be seen on Table~\ref{tab:pacs}. The proposed method shows a +1.7\% improvement compared to the Deep-All baseline, which indicates the proposed method could be helpful to DG tasks. Furthermore, In this setting, the proposed method shows better performance than the majority of the previous methods. Interestingly, the Deep-All baseline also exhibits better performance than many previous works, as mentioned in Li~\etal~\cite{li2019episodic}. Importantly, the proposed method shows better performance than all methods trying to match feature distribution without concerning the task at hand~\cite{ghifary2015domain, ganin2016dann, muandet2013domaingeneralization}. The proposed method also shows the best performance when the target domain is 'cartoon.'
 
-\begin{figure}[t]
-	\centering
-	\footnotesize
-	\begin{tabular}{c}
-		\includegraphics[width=8cm]{figures/analysis.png}
-	\end{tabular}
-	\caption{Analysis}\label{fig:analysis}
-\end{figure}
+\subsection{Results on VLCS + Alexnet}
+To demonstrate the proposed method works well on another dataset, We evaluate FDM on VLCS + Alexnet. The results are on Table~\ref{tab:vlcs}. First, we could not reproduce the baseline of other works. Our baseline has almost 6\% lower performance than the Deep-All from Li~\etal~\cite{li2019episodic}. Therefore, we emphasize that the performance of our method has a large disadvantage than other methods in advance.  In this setting, FDM shows better performance than the baseline model. However, the gain is only +0.7\%, which is quite marginal. These results indicate the proposed regularization could be a hard constraint. We will discuss this problem at \ref{discussion}. Still, the proposed method shows better performance than ~\cite{lresvm, muandet2013domaingeneralization}. However, it shows weak performance than others. The disadvantage mentioned above seems to be a big cause, so it could not be fair comparisons.
+
+\subsection{Results on PACS + ResNet-18}
+We evaluate the proposed method on PACS + ResNet-18 to test whether FDM works well using different network architecture. The estimated results are on table~\ref{tab:pacs_resnet}. The proposed method consistently shows better performance than the Deep-All baseline. However, the gain is only +0.5\%, which indicates the proposed method can be redundant when the network structure is strong enough. Moreover, the proposed method only gives better performance than CrossGrad~\cite{shankar2018generalizing}. Nevertheless, the proposed method shows the best performance when the target domain is 'photo.' Interestingly, DANN~\cite{ganin2016dann} designed to match the feature distribution without concerning the task at hand also shows better performance than FDM and shows comparable performance than state-of-the-art methods. It indicates if the network is strong enough, and there is a set of source domains, a simple feature distribution matching would be enough. 
 
 \begin{table*}[t]
 	\centering
@@ -50,9 +29,8 @@ Nevertheless, the proposed method improves the performance of the Deep-All basel
 			\multicolumn{2}{c|}{Ave.}& 68.6 &65.8 &  70.5 & 65.7 & 71.7& 70.4 & 72.3 & 72.9 & 71.2 & 65.7 & 66.4\\
 			\bottomrule
 	\end{tabular}}
-	\vspace{-0.3cm}
+	\vspace{-0.2cm}
 	\caption{\small Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.}
-	\vspace{-0.4cm}
 	% \vspace{-0.4cm}
 	\label{tab:vlcs}
 \end{table*}

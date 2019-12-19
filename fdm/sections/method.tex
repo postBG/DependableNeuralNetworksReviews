@@ -11,6 +11,26 @@ L_{all} = \mathbb{E}_{\D_s\sim\D} \big[ \mathbb{E}_{\mathbf{x}_i,y_i\sim \mathca
 \end{equation}
 where $\mathbf{y}_i$ is a one-hot vector representation of $y_i$. This method is easy to train, but it has shown comparable performance than other works.
 
+\begin{table*}[t]
+	\centering
+	\scalebox{0.7}{
+		\begin{tabular}{cc|cccccccccc|cc}
+			\toprule
+			Src. & Trgt. & D-MTAE~\cite{Ghifary2015mtae} & DSN~\cite{bousmalis2016domain} & CrossGrad~\cite{shankar2018generalizing} & DICA~\cite{muandet2013domaingeneralization}   &  DANN~\cite{ganin2016dann} & TF-CNN~\cite{Li2017dg}  & MetaReg~\cite{NIPS2018_metareg} & MLDG~\cite{Li2018MLDG} &  Epi-FCR~\cite{li2019episodic} & JiGen~\cite{carlucci2019domain} & Deep-All & FDM \\
+			\midrule
+			C,P,S&A& 60.3& 61.1 & 61.0 & 64.6& 63.2 & 62.9& 63.5 & 66.2 & 64.7 & \textbf{67.6} & 60.4 & 61.7 \\
+			A,P,S&C& 58.7& 66.5 & 67.2 & 64.5 & 67.5 & 67.0&  69.5 & 66.9& 72.3 & 71.7 & 70.2 & \textbf{73.1}\\
+			A,C,S&P& 91.1 & 83.3 & 87.6 & \textbf{91.8} & 88.1& 89.5&  87.4 & 88.0 & 86.1 & 89.0 & 85.3 & 87.4 \\
+			A,C,P&S& 47.9& 58.6 & 55.9 & 51.1 & 57.0 & 57.5& 59.1 & 59.0 & 65.0 & \textbf{65.2} & 61.6 & 62.3 \\
+			\midrule
+			\multicolumn{2}{c|}{Ave.}& 64.5 &67.4 &  67.9 & 68.0& 69.0& 69.2& 69.9 & 70.0 & 72.0 & \textbf{73.4} & 69.4 & 71.1\\
+			\bottomrule
+	\end{tabular}}
+	\vspace{-0.2cm}
+	\caption{\small Cross-domain object classification results (accuracy. \%) on PACS using AlexNet.}
+	\label{tab:pacs}
+\end{table*}
+
 \subsection{Class-wise Feature Distribution Matching Regularization}
 We propose a consistency loss called Class-wise Feature Distribution Matching Regularization (\textit{FDM}), which tries to make a model generate similar features when the labels are the same. The FDM loss is calculated as follows: For each iteration, the feature extractor produces features of the source domains. After that, we calculate the averages of the features by classes. Lastly, the FDM loss is calculated as a consistency loss between the averages and the features that share the same label. The FDM loss is defined as follows:
 \begin{equation}
