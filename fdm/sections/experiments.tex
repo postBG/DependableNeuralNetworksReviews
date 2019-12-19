@@ -1,7 +1,3 @@
-To demonstrate the effectiveness of the proposed method, we conduct an experiment on PACS dataset~\cite{Li2017dg} using AlexNet~\cite{Krizhevsky2012}. We follow the experiment protocol of Li~\etal~\cite{Li2017dg}. We use a batch size 512, and $\lambda$ is set to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the Deep-All works better than many previous works, as Li~\etal~\cite{li2019episodic} mentioned before.
-
-Nevertheless, the proposed method improves the performance of the Deep-All baseline. Furthermore, the proposed method shows better performance than the methods using MMD contraints~\cite{Ghifary2015mtae, muandet2013domaingeneralization}. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
-
 \begin{table*}[t]
 	\centering
 	\scalebox{0.7}{
@@ -24,7 +20,20 @@ Nevertheless, the proposed method improves the performance of the Deep-All basel
 	\label{tab:pacs}
 \end{table*}
 
+To demonstrate the effectiveness of the proposed method, we conduct an experiment on PACS dataset~\cite{Li2017dg} using AlexNet~\cite{Krizhevsky2012}. We follow the experiment protocol of Li~\etal~\cite{Li2017dg}. We use a batch size 512, and $\lambda$ is set to 0.1 for all tests. The results are shown in Table~\ref{tab:pacs}. As we can see, the Deep-All works better than many previous works, as Li~\etal~\cite{li2019episodic} mentioned before.
+
+Nevertheless, the proposed method improves the performance of the Deep-All baseline. Furthermore, the proposed method shows better performance than the methods using MMD contraints~\cite{Ghifary2015mtae, muandet2013domaingeneralization}. However, the improvement is quite marginal and sub-optimal compared to state-of-the-art, which indicates the proposed regularization is quite strong.
+
 \vspace{0.4cm}
+
+\begin{figure}[t]
+	\centering
+	\footnotesize
+	\begin{tabular}{c}
+		\includegraphics[width=8cm]{figures/analysis.png}
+	\end{tabular}
+	\caption{Analysis}\label{fig:analysis}
+\end{figure}
 
 \begin{table*}[t]
 	\centering
