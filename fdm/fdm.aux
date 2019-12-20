@@ -84,6 +84,15 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\hskip -1em.\nobreakspace  {}Problem Setting and Notation}{2}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\hskip -1em.\nobreakspace  {}Deep-All Method}{2}{subsection.3.2}\protected@file@percent }
 \newlabel{eq:agg}{{1}{2}{\hskip -1em.~Deep-All Method}{equation.3.1}{}}
+\citation{Ghifary2015mtae}
+\citation{lresvm}
+\citation{shankar2018generalizing}
+\citation{muandet2013domaingeneralization}
+\citation{ganin2016dann}
+\citation{NIPS2018_metareg}
+\citation{Li2018MLDG}
+\citation{li2019episodic}
+\citation{li2019episodic}
 \citation{chen2013vlcs}
 \citation{Li2017dg}
 \citation{Everingham10}
@@ -110,29 +119,28 @@
 \newlabel{eq:fdm}{{2}{3}{\hskip -1em.~Class-wise Feature Distribution Matching Regularization}{equation.3.2}{}}
 \newlabel{eq:overall}{{3}{3}{\hskip -1em.~Class-wise Feature Distribution Matching Regularization}{equation.3.3}{}}
 \newlabel{eq:rampup}{{4}{3}{\hskip -1em.~Class-wise Feature Distribution Matching Regularization}{equation.3.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Experimental Results}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Experiments}{3}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}Brief Summary of Datasets}{3}{subsection.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}Settings}{3}{subsection.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Results on PACS + Alexnet}{3}{subsection.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Results on VLCS + Alexnet}{3}{subsection.4.4}\protected@file@percent }
 \citation{shankar2018generalizing}
 \citation{ganin2016dann}
-\citation{Ghifary2015mtae}
-\citation{lresvm}
-\citation{shankar2018generalizing}
-\citation{muandet2013domaingeneralization}
-\citation{ganin2016dann}
-\citation{NIPS2018_metareg}
-\citation{Li2018MLDG}
-\citation{li2019episodic}
-\citation{li2019episodic}
 \citation{shankar2018generalizing}
 \citation{ganin2016dann}
 \citation{NIPS2018_metareg}
 \citation{Li2018MLDG}
 \citation{li2019episodic}
-\citation{chen2013vlcs}
-\citation{He2016resnet}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.\relax }}{4}{table.caption.3}\protected@file@percent }
+\newlabel{tab:vlcs}{{2}{4}{\small Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.\relax }{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}\hskip -1em.\nobreakspace  {}Results on PACS + ResNet-18}{4}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Discussion}{4}{section.5}\protected@file@percent }
+\newlabel{discussion}{{5}{4}{\hskip -1em.~Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Analysis: Hyperparameter Sensitivity}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {The Plot of Hyperparameter Sensitivity on PACS + Alexnet} The orange line represents the mean accuracy of the four target domains. The blue line denotes the average L2 distance between the mean representation and the feature of each example.\relax }}{4}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:analysis}{{2}{4}{\textbf {The Plot of Hyperparameter Sensitivity on PACS + Alexnet} The orange line represents the mean accuracy of the four target domains. The blue line denotes the average L2 distance between the mean representation and the feature of each example.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Why ResNet-18 Has a Smaller Gain Than Alexnet?}{4}{subsection.5.2}\protected@file@percent }
+\newlabel{resnet_discussion}{{5.2}{4}{\hskip -1em.~Why ResNet-18 Has a Smaller Gain Than Alexnet?}{subsection.5.2}{}}
 \bibstyle{ieee_fullname}
 \bibdata{egbib}
 \bibcite{NIPS2018_metareg}{1}
@@ -150,13 +158,6 @@
 \bibcite{Girshick2014}{13}
 \bibcite{guo2018-multi}{14}
 \bibcite{He2016resnet}{15}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Analysis\relax }}{4}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:analysis}{{2}{4}{Analysis\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}\hskip -1em.\nobreakspace  {}Results on PACS + ResNet-18}{4}{subsection.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Discussion}{4}{section.5}\protected@file@percent }
-\newlabel{discussion}{{5}{4}{\hskip -1em.~Discussion}{section.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Future Works}{4}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.\nobreakspace  {}Conclusion}{4}{section.7}\protected@file@percent }
 \bibcite{Khosla12undobias}{16}
 \bibcite{Krizhevsky2012}{17}
 \bibcite{Li2017dg}{18}
@@ -166,6 +167,10 @@
 \bibcite{mmdaaecvpr2018}{22}
 \bibcite{Shelhamer2017}{23}
 \bibcite{motiian2017CCSA}{24}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cross-domain object classification results (accuracy. \%) on PACS using ResNet-18.\relax }}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tab:pacs_resnet}{{3}{5}{\small Cross-domain object classification results (accuracy. \%) on PACS using ResNet-18.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Future Works}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}\hskip -1em.\nobreakspace  {}Conclusion}{5}{section.7}\protected@file@percent }
 \bibcite{muandet2013domaingeneralization}{25}
 \bibcite{peng2018moment}{26}
 \bibcite{Rebuffi17}{27}
@@ -179,7 +184,3 @@
 \bibcite{yang2015mdlmtl}{35}
 \bibcite{Zhao2018NIPS}{36}
 \bibcite{lresvm}{37}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.\relax }}{5}{table.caption.3}\protected@file@percent }
-\newlabel{tab:vlcs}{{2}{5}{\small Cross-domain object classification results (accuracy. \%) on VLCS using AlexNet.\relax }{table.caption.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Cross-domain object classification results (accuracy. \%) on PACS using ResNet-18.\relax }}{5}{table.caption.4}\protected@file@percent }
-\newlabel{tab:pacs_resnet}{{3}{5}{\small Cross-domain object classification results (accuracy. \%) on PACS using ResNet-18.\relax }{table.caption.4}{}}
