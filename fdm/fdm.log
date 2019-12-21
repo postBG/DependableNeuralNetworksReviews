@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  20 DEC 2019 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  21 DEC 2019 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,7 +496,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-<figures/analysis.png, id=191, 462.528pt x 346.896pt>
+<figures/analysis.png, id=192, 462.528pt x 346.896pt>
 File: figures/analysis.png Graphic file (type png)
 <use figures/analysis.png>
 Package pdftex.def Info: figures/analysis.png  used on input line 10.
@@ -567,10 +567,10 @@ exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on fdm.pdf (6 pages, 302198 bytes).
+Output written on fdm.pdf (6 pages, 302295 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
+ 286 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
  73 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
