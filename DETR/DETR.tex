@@ -33,27 +33,30 @@
 \thispagestyle{empty}
 
 \section{Introduction and Motivation}
-Current object detection methods address object detection as a sequential task that predicts object classes after proposing the candidate bounding boxes. Thus, these methods tackle object detection as a combination of a surrogate regression task for boxes proposals and a classification task on the selected proposals. Unfortunately, this kind of approach makes the object detection pipeline complex, requiring a lot of heuristics such as Non-Maximal Suppression~\cite{} or a complicated training scheme~\cite{}.
+Current object detection methods address object detection as a sequential task that predicts object classes after proposing the candidate bounding boxes. Thus, these methods tackle object detection as a combination of a surrogate regression task for boxes proposals and a classification task on the selected proposals. Unfortunately, this kind of approach makes the object detection pipeline complex, requiring a lot of heuristics such as Non-Maximal Suppression or a complicated training scheme~\cite{}.
 
-To address this problem, this paper view object detection as a direct set prediction where the set is a collection of the (class, bounding box coordination) pairs. The changed view simplifies the object detection process by removing the heuristics that encode the human's prior knowledge about object detection.
+To address this problem, this paper view object detection as a direct set prediction where the set is a collection of the (class, bounding box coordinate) pairs. The changed view simplifies the object detection process by removing the heuristics that encode the human's prior knowledge about object detection.
 
 The authors implement the set predictor using an encoder-decoder transformer and bipartite matching loss. The transformer takes features extracted from a traditional convolutional neural network (CNN) as input tokens and outputs a set of (class, bounding box)s. 
 
 \begin{figure}[b]
 	\centering
-	\subfigure[The transformer architecture]{\includegraphics[width=4cm, height=4cm]{assets/transformer.pdf}}
+	\subfigure[The transformer architecture]{\includegraphics[width=4cm, height=2.5cm]{assets/transformer.pdf}}
 	\subfigure[The encoder resolves instance occlusions]{\includegraphics[width=4cm, height=2.5cm]{assets/cows_attn.pdf}}
 	\caption{(a) The proposed encoder-decoder transformer architecture, (b) The encoder's attention maps: the encoder separate each instance even though those are occluded.}
 	\label{fig:imgs}
 \end{figure}
 
 \section{Method}
-\subsection{Architecture}
-The proposed architecture consists of three main components: a CNN backbone that extracts features used as input tokens for transformer, an encoder-decoder transformer that takes CNN features and transforms the features, and two feed-forward networks that predict classes and bounding box coordinations, respectively. 
+\subsection{Architecture: DEtection TRansformer (DETR)}
+The proposed architecture named DETR consists of three main components: a CNN backbone that extracts features used as input tokens for transformer, an encoder-decoder transformer that takes the CNN features and transforms the features, and feed-forward networks that predict classes and bounding box coordinates for each token. 
+
+When we set $N$ as a fixed prediction size, the output will be  $\hat{y} = \{\hat{y}_i\}_{i=1}^{N}$ where $\hat{y}_i = \{\hat{p}_i, \hat{b}_i\}$ is a pair of the predicted class probability ($\hat{p}_i$) and box coordinates ($\hat{b}_i$). 
 
 The transformer has the typical form as proposed in ~\cite{} except they use additional positional encodings called \textit{object queries} on the decoder. The detailed architecture is shown in Figure~\ref{fig:imgs} (a). 
 
 \subsection{Set Prediction Loss}
+
 
 
 \section{Results}
