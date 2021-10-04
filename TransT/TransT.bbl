@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{SiamFC}
+L.~Bertinetto, et~al.
+\newblock Fully-convolutional siamese networks for object tracking.
+\newblock In {\em ECCV Workshops}, 2016.
+
+\bibitem{DiMP}
+G.~Bhat, et~al.
+\newblock Learning discriminative model prediction for tracking.
+\newblock In {\em ICCV}, 2019.
+
+\bibitem{ATOM}
+M.~Danelljan, et~al.
+\newblock Atom: Accurate tracking by overlap maximization.
+\newblock In {\em CVPR}, 2019.
+
+\bibitem{SA}
+A.~Vaswani, et~al.
+\newblock {Attention is all you need}.
+\newblock In {\em NeurIPS}, 2017.
+
+\end{thebibliography}
