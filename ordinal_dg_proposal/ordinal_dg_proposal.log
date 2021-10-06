@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  6 OCT 2021 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  6 OCT 2021 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,42 +311,42 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-
-Underfull \hbox (badness 3492) in paragraph at lines 47--48
- []\OT1/ptm/b/n/10 Justification and Im-pact of the Project[] \OT1/ptm/m/n/10 Net-works
- []
-
-(/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.bbl (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.brf)
+ (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.bbl (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.brf)
 \tf@brf=\write3
 \openout3 = `ordinal_dg_proposal.brf'.
 
+
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
  [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
+
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `ordinal_dg_proposal.brf' has not changed.
-(rerunfilecheck)             Checksum: E20ED8A8C2ED77D5901C8DBB321544F9;38.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 6270 strings out of 492616
- 92291 string characters out of 6128983
- 187543 words of memory out of 5000000
- 10112 multiletter control sequences out of 15000+600000
- 13451 words of font info for 27 fonts, out of 8000000 for 9000
+ 6260 strings out of 492616
+ 92202 string characters out of 6128983
+ 185516 words of memory out of 5000000
+ 10107 multiletter control sequences out of 15000+600000
+ 10689 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,5n,27p,820b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.pdf (1 page, 39928 bytes).
+ 32i,5n,27p,685b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.pdf (1 page, 31263 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 29 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
