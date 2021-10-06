@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex ordinal_dg_proposal"] 1633517178 "ordinal_dg_proposal.aux" "ordinal_dg_proposal.bbl" "ordinal_dg_proposal" 1633517300
+["bibtex ordinal_dg_proposal"] 1633531050 "ordinal_dg_proposal.aux" "ordinal_dg_proposal.bbl" "ordinal_dg_proposal" 1633531061
   "./ieee.bst" 1633512599 19819 438b772c98d8c4732eddcf8b512ddb58 ""
-  "egbib.bib" 1633512599 284 7b6183a9e8b85e50b13f469503d7723d ""
-  "ordinal_dg_proposal.aux" 1633517179 1219 339e4af30efd404c70280292e877d5e6 ""
+  "egbib.bib" 1633531058 225 7ed94f319f076bca5f6506e49d9e1195 ""
+  "ordinal_dg_proposal.aux" 1633531035 1304 39370ef5b5eb80777886949e816f8c21 ""
   (generated)
   "ordinal_dg_proposal.bbl"
   "ordinal_dg_proposal.blg"
-["pdflatex"] 1633517179 "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.tex" "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.pdf" "ordinal_dg_proposal" 1633517300
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.aux" 1633517179 1219 339e4af30efd404c70280292e877d5e6 ""
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.tex" 1633517299 2989 d322655512b8d2a4186b0fb7bfec331d ""
+["pdflatex"] 1633531034 "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.tex" "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.pdf" "ordinal_dg_proposal" 1633531061
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.aux" 1633531035 1304 39370ef5b5eb80777886949e816f8c21 ""
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.tex" 1633531008 3361 507c8e82fc88ba46984c5a8f2420f014 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb.tfm" 1480098688 2300 14616918391efa49ac8b481a75fbdc1a ""
@@ -67,14 +67,14 @@
   "dependable_dnn.sty" 1633512599 7723 3543784fe682fed6d4812aa96697964c ""
   "eso-pic.sty" 1633512599 9460 29995dabf1038792bdb8ce1c70ebbbff ""
   "iccv_eso.sty" 1633512599 3878 6aa7c08ff2621006e0603349e40a30a8 ""
-  "ordinal_dg_proposal.aux" 1633517179 1219 339e4af30efd404c70280292e877d5e6 ""
-  "ordinal_dg_proposal.bbl" 1633517178 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex ordinal_dg_proposal"
-  "ordinal_dg_proposal.brf" 1633517179 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "ordinal_dg_proposal.tex" 1633517299 2989 d322655512b8d2a4186b0fb7bfec331d ""
+  "ordinal_dg_proposal.aux" 1633531035 1304 39370ef5b5eb80777886949e816f8c21 ""
+  "ordinal_dg_proposal.bbl" 1633531050 188 398980b8a8b315cfa4b0347548667e35 "bibtex ordinal_dg_proposal"
+  "ordinal_dg_proposal.brf" 1633531035 36 c3d7a8e4b7bc42c810987ed7c4e78652 ""
+  "ordinal_dg_proposal.tex" 1633531008 3361 507c8e82fc88ba46984c5a8f2420f014 ""
   (generated)
   "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.pdf"
   "ordinal_dg_proposal.log"
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.log"
-  "ordinal_dg_proposal.brf"
-  "ordinal_dg_proposal.aux"
   "ordinal_dg_proposal.pdf"
+  "ordinal_dg_proposal.brf"
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/ordinal_dg_proposal/ordinal_dg_proposal.log"
+  "ordinal_dg_proposal.aux"

@@ -1,3 +1,8 @@
-\begin{thebibliography}{}\itemsep=-1pt
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{RCG}
+X.~Liu, et~al.
+\newblock Recursively conditional gaussian for ordinal unsupervised domain
+  adaptation, 2021.
 
 \end{thebibliography}

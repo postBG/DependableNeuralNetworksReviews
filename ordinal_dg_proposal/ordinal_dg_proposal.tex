@@ -36,8 +36,10 @@
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
 \section{Main Idea and Motivation}
-\paragraph{Motivation and Main Idea}  Many researchers adopt Domain Generalization (DG) to mitigate the failure of deep neural networks in unseen environments. However, most existing methods merely concentrate on classifying independently discrete labels. Unfortunately, however, in many real-world applications such as medical diagnosis, the labels in interest often have intrinsic order.
-This project will propose a novel training method to learn representations that encode the intrinsic order while robust to the domain shift.
+\paragraph{Motivation and Main Idea}  Many researchers adopt Domain Generalization (DG) to mitigate the failure of deep neural networks in unseen environments. However, most existing methods merely concentrate on classifying independently discrete labels. Unfortunately, however, in many real-world applications such as medical diagnosis, the labels in interest often have intrinsic order~\cite{RCG}.
+We hypothesize that the existing methods do not maintain or encode the ordinal relationship between labels.
+
+Based on the hypothesis, this project proposes a novel problem setting named Ordinal Domain Generalization, which aims to encode the ordinal relationship between labels in learned features under the domain shift environment. In this project, first, I will propose the proper benchmarks along with baselines. Then, based on the experimental setting, I will also devise a novel training method.
 
 \paragraph{Justification and Impact of the Project}
 The primary purpose of this project is to develop a more realistic and practical training method by considering the domain shift and the ordinal relationship between labels. If successful, we would utilize the method in various applications, such as predicting the age of humans has unseen races or diagnosing disease severity with pictures taken by a new medical imaging device, etc. Furthermore, this study will enable other researchers to understand the characteristics and limitations of learned representations and develop safer and more reliable models.
