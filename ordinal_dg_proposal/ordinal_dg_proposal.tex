@@ -1,0 +1,63 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{dependable_dnn}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\D}{\mathcal{D}}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\iccvfinalcopy % *** Uncomment this line for the final submission
+
+\def\iccvPaperID{} % *** Enter the Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ificcvfinal\pagestyle{empty}\fi
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{Project Proposal: \\ Domain Generalization by Matching Feature Distributions \\{\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2013-11420), Dept. of Computer Science and Engineering, Seoul National University}}} 
+
+\maketitle
+\thispagestyle{empty}
+
+%%%%%%%%% BODY TEXT - ENTER YOUR RESPONSE BELOW
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+\section{Main Idea and Motivation}
+\paragraph{Main Idea}  In this project, I will tackle the \textit{Domain Generalization} (DG). The main idea of this project is to employ consistency loss between two data points that share the same label but have different domains. This idea is based on a simple concept and can be easily integrated with other methods.
+
+\paragraph{Motivation}
+The primary purpose of domain generalization is to train a model that generalizes well to the unseen target domain. For this purpose, we should induce a model to encode features that are sufficiently semantic and consistent across domains. Therefore, It is natural to add consistency loss between same-labeled data points but sampled from different domains. 
+
+Some of the previous works have attempted to learn domain invariant features. However, those methods did not care about the task at hand, so they achieved sub-optimal performance. Otherwise, this project explicitly concerns about the task at hand by using labels. Furthermore, the consistency loss acts as a regularizer that prevents the feature extractor from encoding redundant information like style or texture. If the feature extractor encodes such domain-specific details, the consistency loss will increase. Therefore, the feature extractor will try not to encode such noise to decrease the loss. It is also easier to implement than other multi-task based methods like JiGen~\cite{JiGen}.
+
+\paragraph{Justification and Impact of the Project}
+Networks should be able to work well on unseen situations to being dependable. The DG tries to achieve this kind of purpose. Therefore, I do believe the proposed idea is highly relevant to the course. The impacts of the project are as follows: first, the simple concepts that the project based on will be verified indirectly, and the concepts can be helpful to devise new approaches. Second, other methods can adopt the proposed idea for improving generality because of its simplicity. Lastly, it will help me understand domain generalization.
+
+
+\section{The Project Plan}
+I will prepare for my presentation until Oct. 8th. After then, I will implement the idea for three weeks. In October, I can not fix my schedule at this time because of midterm exams and graduate entrance exams. Therefore, the plan can be modified. After then, the first experimental results will be out. I will write the intermediate report using the results. After the intermediate release due, I will plan the schedule of the remaining parts of the project.
+ 
+
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
