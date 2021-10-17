@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  17 OCT 2021 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  17 OCT 2021 21:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -355,59 +355,54 @@ LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-
-Underfull \hbox (badness 2486) in paragraph at lines 40--40
-[] \OT1/ptm/b/n/12 . Self-supervised Bayesian de-nois-ing with
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 42--42
-[] \elvbf . Self-Attention (SA) and Multi-head Self-
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.59937pt too wide) detected at line 48
-[]
+Underfull \hbox (badness 1014) in paragraph at lines 54--56
+\OT1/ptm/m/n/10 Note that by as-sum-ing $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )$\OT1/ptm/m/n/10 , we are able to model
  []
 
-(/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/denoising.bbl (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/denoising.brf)
-\tf@brf=\write3
-\openout3 = `denoising.brf'.
+<assets/outline-3.pdf, id=4, 452.3988pt x 150.03323pt>
+File: assets/outline-3.pdf Graphic file (type pdf)
+<use assets/outline-3.pdf>
+Package pdftex.def Info: assets/outline-3.pdf  used on input line 60.
+(pdftex.def)             Requested size: 250.93842pt x 83.22134pt.
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
- [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Overfull \hbox (13.80247pt too wide) in paragraph at lines 60--61
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
+ </Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/assets/outline-3.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
  (/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/denoising.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
-Package rerunfilecheck Info: File `denoising.brf' has not changed.
-(rerunfilecheck)             Checksum: 22C6E69ED29D3610A473D1490765F63C;77.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 87.
  ) 
 Here is how much of TeX's memory you used:
- 7030 strings out of 492616
- 101446 string characters out of 6128983
- 208353 words of memory out of 5000000
- 10834 multiletter control sequences out of 15000+600000
- 16572 words of font info for 39 fonts, out of 8000000 for 9000
+ 7011 strings out of 492616
+ 101085 string characters out of 6128983
+ 205711 words of memory out of 5000000
+ 10828 multiletter control sequences out of 15000+600000
+ 14573 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,10n,35p,641b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/denoising.pdf (1 page, 131361 bytes).
+ 32i,8n,35p,683b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/Denoising/denoising.pdf (1 page, 823454 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
