@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{BERT}
+J.~Devlin, et~al.
+\newblock {BERT: Pre-training of Deep Bidirectional Transformers for Language
+  Understanding}.
+\newblock In {\em NAACL}, 2019.
+
+\bibitem{SA}
+A.~Vaswani, et~al.
+\newblock {Attention is all you need}.
+\newblock In {\em NeurIPS}, 2017.
+
+\end{thebibliography}

@@ -1,0 +1,85 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{dependable_dnn}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage[table, dvipsnames]{xcolor}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\iccvfinalcopy % *** Uncomment this line for the final submission
+
+\def\iccvPaperID{} % *** Enter the Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ificcvfinal\pagestyle{empty}\fi
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{High-Quality Self-Supervised Deep Image Denoising\\ {\rm {\normalsize Seungmin Lee (profile2697@gmail.com; 2020-20866), \\Dept. of Electrical and Computer Engineering, Seoul National University}}}   % **** Enter the paper title and student information here
+
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction and Motivation}
+Traditional denoising methods are supervised-learning bases, requiring a pair of clean and corrupted images for each input. However, collecting such pairs is difficult and often impossible. This paper proposes a novel denoising model training method that only requires unpaired collections of corrupted images to alleviate the data collection problem. 
+The proposed method predicts the clean pixel value with Bayesian reasoning based on a given noise pixel value and neighboring pixels around the noise pixel.
+
+
+\section{Self-supervised Bayesian denoising with blind-spot networks}
+In this section, we review the self-attention and multi-head self-attention~\cite{SA}, which are used for the main architecture.
+\subsection{Self-Attention (SA) and Multi-head Self-Attention (MSA)} 
+Self-Attention (SA) takes $\mathbf{z} \in \mathbb{R}^{N \times D}$ and transforms it using the following equations:
+\begin{align*}
+	&[\mathbf{q}, \mathbf{k}, \mathbf{v}] = [z\mathbf{W}_q, z\mathbf{W}_k, z\mathbf{W}_v], \quad \mathbf{W}_q, \mathbf{W}_k, \mathbf{W}_v \in \mathbb{R}^{D \times H}	\\
+	&\mathbf{A} = \text{softmax}(\mathbf{q}\mathbf{k}^\intercal / \sqrt{H}) \in \mathbb{R}^{N \times N}, \\
+	&\text{SA}(\mathbf{z}) = \mathbf{A}\mathbf{v} \in \mathbb{R}^{N \times H}.
+\end{align*}
+Multi-head Self-Attention (MSA) with $h$ heads sets $H = D / h$ and runs $h$ $\text{SA}$s in parallel. After then, MSA puts together the results from the $\text{SA}$s using concatenation and a linear projection:
+\begin{align*}
+	&\text{MSA}(\mathbf{z}) = \text{cat}(\text{SA}_0(z), ..., \text{SA}_{h-1}(z))\mathbf{W}_{msa} \in \mathbb{R}^{N \times D},
+\end{align*}
+where $\text{cat}(.)$ is concatenation and $\mathbf{W}_{msa} \in \mathbb{R}^{D \times D}$.
+
+\subsection{Transformer}
+Transformer is constructed using a combination of multi-head self-attentions ($\text{MSA}$), layer normalizations ($\text{LN}$), and MLP layers as follows:
+\begin{align*}
+	&\mathbf{z}_0 = \text{cat}(\mathbf{t}_{cls}, \mathbf{t}_0, ..., \mathbf{t}_{N-1}) + \mathbf{E}_{pos}, \quad \mathbf{E}_{pos} \in \mathbb{R}^{(N + 1) \times D} \\
+	&\mathbf{h}_{l+1} = \text{MSA}(\text{LN}(\mathbf{z}_{l})) + \mathbf{z}_{l}, \quad l = 0 \text{...} L-1 \\
+	&\mathbf{z}_{l+1} = \text{MLP}(\text{LN}(\mathbf{h}_{l + 1})) + \mathbf{h}_{l+1}, \quad l = 0 \text{...} L-1 \\
+	&\mathbf{y} = \text{LN}(z^0_{L}),
+\end{align*}
+where $\mathbf{t}_i \in \mathbb{R}^D$ and $\mathbf{t}_{cls}$ is the $i$-th embedded token and $\text{CLS}$ token proposed in BERT~\cite{BERT}, respectively. $\mathbf{E}_{pos}$ is a positional embedding.
+
+\section{Method: ViT and Hybrid Architecture}
+\subsection{ViT}
+ViT uses $\mathbf{t}_i = \mathbf{x}^i_p\mathbf{W}_{E}$ where $\mathbf{x}^i_p \in \mathbb{R}^{C \cdot P^2}$ is the $i$-th $P \times P$ image patch from the original image $\mathbf{x} \in \mathbb{R}^{C \times H \times W}$, while $\mathbf{W}_{E} \in \mathbb{R} ^ {C \cdot P^2 \times D}$ is a simple linear projector. In this case, $N = HW / P^2$.
+
+\subsection{Hybrid Architecture}
+Assume that $\mathbf{f} = \text{CNN}(\mathbf{x}) \in \mathbb{R} ^ {C_f \cdot H_f \cdot W_f}$, where $\text{CNN}$ is a traditional convolutional neural network. Then, the proposed hybrid architecture uses each pixel of the extracted feature $\mathbf{f}_i \in \mathbb{R}^{C_f}$ as $\mathbf{t}_i$, where $D = C_f$ and $N = H_fW_f$.
+
+\section{Results}
+The transformers show relatively lower performance than convolutional neural networks when the amount of data is small. The authors claim that the lack of some useful inductive biases such as translation invariance is the cause of the performance degradation. However, if transformers are pre-trained on a large dataset, they perform better than traditional models. 
+
+\section{Personal Note}
+This paper contributes in that it unifies scattered architectures in several fields into a single architecture (transformer). However, it still requires many computational resources and data, which is hard to use in small organizations. Moreover, this paper has some drawbacks in that this paper does not justifies why this model works well. Nevertheless, we can guess that projecting image patches using the same weights ($\mathbf{W}_{E}$) implements "translation invariance," and SA's all-to-all similarity estimation helps to recover "locality."  
+
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+
+\end{document}
