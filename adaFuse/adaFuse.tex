@@ -40,12 +40,12 @@
 \thispagestyle{empty}
 
 \section{Introduction and Motivation}
-In video action recognition, both temporal modeling and employing temporal redundancy are crucial. For the purposes, the authors propose AdaFuse, named from an adaptive temporal fusion network, that dynamically selects channels of current and past feature maps and fuses them. 
+In video action recognition, both temporal modeling and employing temporal redundancy are crucial. For the purposes, the authors propose AdaFuse, named from an adaptive temporal fusion network, that dynamically selects and fuses the channels of current and past feature maps. 
 
 \begin{figure}[b]
 	\centering
 	\includegraphics[width=8cm]{assets/shit.png}
-	\caption{(a) The proposed encoder-decoder transformer architecture, (b) The encoder's attention maps: the encoder separate each instance even though those are occluded.}
+	\caption{The agent of AdaFuse selects which channels to use dynamically.}
 	\label{fig:imgs}
 \end{figure}
 
@@ -55,14 +55,14 @@ For action recognition, many methods first extract feature maps from each frame 
 \begin{align*}
 	P(X_1, ..., X_T) = \mathcal{G}(\mathcal{F}(X_1), ...,\mathcal{F}(X_T))
 \end{align*}
-where $T$ is the number of sampled frames, and $\{X_1, ..., X_T\}$ are the sampled frames. The consensus operation can be an average operation or LSTM.
+where $T$ is the number of sampled frames, and $\{X_1, ..., X_T\}$ are the sampled frames. The consensus operation can be an average operation or LSTM. AdaFuse is inserted in between layers of $\mathcal{F}$.
 
 \subsection{Adaptive Temporal Fusion}
-Assume that $x_t \in \mathbb{R}^{c \times h \times w}$ is a feature map, and $y_t=\text{conv}(x_t) \in \mathbb{R}^{c' \times h' \times w'}$ is a feature map of the next layer. Let $v_t = GAP(x_t) \in \mathbb{R}^{c}$ is a global average pooled feature. AdaFuse adopts an agent $g$ that takes $v_t$ and $v_{t-1}$ and outputs $p_t \in \{0, 1, 2\}^{c}$ where $p_t$ is used to fuse $y_t$ and $y_{t-1}$:
+Assume that $x_t \in \mathbb{R}^{c \times h \times w}$ is a feature map, and $y_t=\text{conv}(x_t) \in \mathbb{R}^{c' \times h' \times w'}$ is a feature map of the next layer. We define $v_t = GAP(x_t) \in \mathbb{R}^{c}$ as a global average pooled feature. AdaFuse adopts an agent $g$ that takes $v_t$ and $v_{t-1}$ and outputs $p_t \in \{0, 1, 2\}^{c}$ where $p_t$ is used to fuse $y_t$ and $y_{t-1}$:
 \begin{align*}
 	\hat{y}^i_t = \mathbf{1}[p^i_t = 0] \cdot y^i_t + \mathbf{1}[p^i_t = 1] \cdot y^i_{t-1}
 \end{align*}
-where $\mathbf{1}$ is the indicator function. The equation means if $p^i_t$ is 0, then we use the $i$-th channel of $y_t$; else if $p^i_t$ is 1, we use the $i$-th channel of $y_{t-1}$; finally, if $p^i_t$ is 2, we mask the $i$-th channel as zeros.
+where $\mathbf{1}$ is the indicator function. We can interpret the equation as follows: if $p^i_t$ is 0, then we use the $i$-th channel of $y_t$; else if $p^i_t$ is 1, we use the $i$-th channel of $y_{t-1}$; finally, if $p^i_t$ is 2, we mask the $i$-th channel as zeros (Figure~\ref{fig:imgs}). 
 
 \subsection{Loss functions}
 The loss function is the sum of the cross-entropy loss and the FLOPS of AdaFuse layers. The agent learns to minimize the FLOPS while maintaining the accuracy.
@@ -74,10 +74,10 @@ AdaFuse consistently improves performance while maintaining the FLOPS of the net
 \section{Personal Note}
 Even though integrating with Reinforce learning seems a little bit complicated, the method seems simple, neat, and efficient. 
 
-{\small
-\bibliographystyle{ieee}
-\bibliography{egbib}
-}
+% {\small
+% \bibliographystyle{ieee}
+% \bibliography{egbib}
+% }
 
 
 \end{document}

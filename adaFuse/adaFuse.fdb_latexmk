@@ -1,14 +1,7 @@
 # Fdb version 3
-["bibtex adaFuse"] 1635159011 "adaFuse.aux" "adaFuse.bbl" "adaFuse" 1635159022
-  "./ieee.bst" 1635140212 19819 438b772c98d8c4732eddcf8b512ddb58 ""
-  "adaFuse.aux" 1635159013 2196 8b9824b36a1feac43ecc6ca31b69e84a ""
-  "egbib.bib" 1635140212 1132 87b67053929608d24879cd8910b46ee5 ""
-  (generated)
-  "adaFuse.bbl"
-  "adaFuse.blg"
-["pdflatex"] 1635159012 "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.tex" "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.pdf" "adaFuse" 1635159022
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.aux" 1635159013 2196 8b9824b36a1feac43ecc6ca31b69e84a ""
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.tex" 1635159020 4204 381632125506127d97251f270e80f1f6 ""
+["pdflatex"] 1635171638 "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.tex" "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.pdf" "adaFuse" 1635171639
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.aux" 1635171639 1972 e8cb880da62215f9ed088e4dc26251a2 ""
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.tex" 1635171637 4225 d651077510442ba0b1e01b2c7bb55de3 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb.tfm" 1480098688 2300 14616918391efa49ac8b481a75fbdc1a ""
@@ -93,18 +86,16 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1554657694 3236106 bef0cf154a3167603a4917a99a2c80c5 ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1554657766 4227022 4f4f031a534dbeacc222d06cc7566646 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "adaFuse.aux" 1635159013 2196 8b9824b36a1feac43ecc6ca31b69e84a ""
-  "adaFuse.bbl" 1635159011 62 d49dbf9d4b1773efa2d694c4016814c1 "bibtex adaFuse"
-  "adaFuse.brf" 1635159012 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "adaFuse.tex" 1635159020 4204 381632125506127d97251f270e80f1f6 ""
+  "adaFuse.aux" 1635171639 1972 e8cb880da62215f9ed088e4dc26251a2 ""
+  "adaFuse.tex" 1635171637 4225 d651077510442ba0b1e01b2c7bb55de3 ""
   "assets/shit.png" 1612999083 116003 a0296d372690af4a95c4ef22b96bde96 ""
   "dependable_dnn.sty" 1635140212 7723 3543784fe682fed6d4812aa96697964c ""
   "eso-pic.sty" 1635140212 9460 29995dabf1038792bdb8ce1c70ebbbff ""
   "iccv_eso.sty" 1635140212 3878 6aa7c08ff2621006e0603349e40a30a8 ""
   (generated)
-  "adaFuse.pdf"
-  "adaFuse.aux"
   "adaFuse.log"
-  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.log"
+  "adaFuse.aux"
   "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.pdf"
   "adaFuse.brf"
+  "adaFuse.pdf"
+  "/Users/postbg/VSCodeProjects/DependableNeuralNetworksReviews/adaFuse/adaFuse.log"
