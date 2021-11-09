@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{SH1}
+B.~Cabral, et~al.
+\newblock Bidirectional reflection functions from surface bump maps.
+\newblock 1987.
+
+\bibitem{SH2}
+L.~Wu, et~al.
+\newblock Analytic spherical harmonic gradients for realtime rendering with
+  many polygonal area lights.
+\newblock In {\em ACM Trans. Graph}, 2020.
+
+\end{thebibliography}
