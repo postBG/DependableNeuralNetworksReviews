@@ -23,6 +23,11 @@
 
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 \ificcvfinal\pagestyle{empty}\fi
+\newcommand{\N}{{\mathbf{N}}}  
+\newcommand{\R}{{\mathbf{R}}}  
+\newcommand{\A}{{\mathbf{W}}}   
+\newcommand{\n}{{\mathbf{n}}}   
+\newcommand{\argmax}{\mathop{\arg\max}}  % notation of argmax.
 
 \begin{document}
 
@@ -42,17 +47,50 @@ A generator $G(\cdot)$ takes a $d$-dimensional latent vector $\mathbf{z}$ from t
 \end{align*}
 where $\mathbf{W} \in \mathbf{R}^{m \times d}$ and $\mathbf{b} \in \mathbf{R}^m$ denote the weights and bias, respectively.
 
+We can manipulate the image generation by adding a particular direction $\mathbf{n} \in \mathbf{R}^d$ that represents a semantic concept to a given input vector: 
+\begin{align*}
+    \text{edit}(G(\mathbf{z})) = G(\mathbf{z} + \alpha\mathbf{n})
+\end{align*}
+where $\alpha$ controls the manipulation intensity.
+
 \section{Method}
+At the first layer, we can simplify the manipulation as follows:
+\begin{align}
+    \mathbf{y}' &= G_1(\mathbf{z} + \alpha\mathbf{n}) = \mathbf{W}(\mathbf{z} + \alpha\mathbf{n}) + \mathbf{b}\nonumber\\
+    &= (\mathbf{W}\mathbf{z} + \mathbf{b}) + \alpha\mathbf{W}\mathbf{n}\nonumber\\
+    &= \mathbf{y} + \alpha\mathbf{W}\mathbf{n}.\label{eq}
+\end{align}
+
+By observing Eq.~(\ref{eq}), the authors claim that $\mathbf{W}$ already contains essential information about the image edition, and thus, we can discover useful latent directions by decomposing $\mathbf{W}$.
+
+Assume that we want to find $k$ most significant directions $\N^{*} \in \mathbf{R}^{d \times k}$. Then, $\N^{*}$ should satisfy the following equation:
+\begin{align}
+    \N^* = \argmax_{\{\N\in\R^{d\times k}:\ \n_i^T\n_i = 1\ \forall i=1,\cdots,k\}} \sum_{i=1}^k ||\A\n_i||_2^2,  \label{eq:optimization}
+\end{align}
+where $\n_i \in \mathbf{R}^d$ denotes the $i$-th column of $\N$, and $||\cdot||_2$ corresponds to $l_2$ norm.
+
+The authors use the Lagrange multipliers $\{\lambda_i\}_{i=1}^k$ to solve Eq.~(\ref{eq:optimization}). With the multipliers, Eq.~(\ref{eq:optimization}) can be written as:
+\begin{align}
+    \N^* &= \argmax_{\N\in\R^{d\times k}} \sum_{i=1}^k ||\A\n_i||_2^2 - \sum_{i=1}^k\lambda_i(\n_i^T\n_i - 1) \nonumber \\
+    &= \argmax_{\N\in\R^{d\times k}} \sum_{i=1}^k (\n_i^T\A^T\A\n_i - \lambda_i\n_i^T\n_i + \lambda_i). \label{eq:lagrange}
+\end{align}
+
+By taking partial derivative of Eq.~(\ref{eq:lagrange}), we get $\n_i$:
+\begin{align}
+    2\A^T\A\n_i - 2\lambda_i\n_i = 0. \label{eq:solution}
+\end{align} 
 
 \section{Results}
+The authors conduct experiments using various GANs. The proposed method consistently finds useful directions, as we can observe from Fig.~(\ref{fig:imgs}). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm]{assets/comparison_infogan.pdf}
+	\caption{Some qualitative results.}
+	\label{fig:imgs}
+\end{figure}
 
 \section{Personal Note}
-
-
-{\small
-\bibliographystyle{ieee}
-\bibliography{egbib}
-}
-
+The authors' claims are intuitive and useful. Moreover, the proposed method seems practical since it does not require any data samples and human annotations. 
 
 \end{document}
