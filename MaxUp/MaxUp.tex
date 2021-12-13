@@ -43,32 +43,18 @@ Empirical Risk Minimization (ERM) is the standard scheme for training a regular 
 \end{equation}
 where $\theta$ and $L$ denote the parameters of the network and the loss function, respectively, and $\mathcal{D}_n$ indicates the dataset while $x$ is a sampled data from $\mathcal{D}_n$. While ERM is simple, the authors argue that ERM often incurs networks' overfitting.
 
-The proposed method, MaxUp, aims to alleviate such overfitting by first generating a set of randomly augmented data, then minimizing the maximum loss over this set:
+To ameliorate overfitting, the authors propose MaxUp, which induces the loss landscape around a sample to be smoother. More specifically, MaxUp randomly augments a given image to produce a set of transformed images. Then, MaxUp selects the worst-case loss among the losses calculated with the transformed images. Finally, MaxUp minimizes the worst-case loss as follows:
 \begin{equation}
-	\label{eq:2}
-	\min_{\theta} \mathbb{E}_{x \sim \mathcal{D}_n} \left[ \max_{i \in [m]}L (x'_i, \theta)\right].
+    \label{eq:2}
+    \min_{\theta} \mathbb{E}_{x \sim \mathcal{D}_n} \left[ \max_{i \in [m]}L (x'_i; \theta)\right].
 \end{equation}
-Compared to Equation~\eqref{eq:1}, Equation~\eqref{eq:2} now has the added $\max$ term, as well as the $x'_i$ term instead of $x$, where $x'_i$ denotes the i-th random augmentation.
-Thus, the objective now is to find the augmentation of $x$ with the maximum loss, then minimize this loss.
+where $x'_i$ denotes the $i$-th augmented sample. Eq.~\ref{eq:2}  is similar to the adversarial training in that both schemes first maximize loss using an augmentation and minimizes the maximzied loss. According to the paper, both training methods share similar smoothing effect.
 
-\section{Experiments and Thoughts}
-Table 1 in the main paper shows the Top-1 and Top-5 accuracies on the validation of ImageNet with ResNet.
-The table compares MaxUp + CutMix with other previous methods, such as Dropout, Mixup~\cite{mixup}, and CutMix~\cite{cutmix}(without MaxUp).
-A similar trend is shown in Table 2, which shows the performance of MaxUp + CutMix compared to solely CutMix on ImageNet, using more recent architectures such as EfficientNet~\cite{efficientnet}.
-The authors also show performance improvements in CIFAR10 and CIFAR100 datasets.
+\section{Experiments}
+The paper conducts experiments on various datasets such as ImageNet, CIFAR10, and CIFAR100. Used network architectures include ResNet and EfficientNet. Across all the settings, MaxUp + CutMix shows slightly improved performance compared to Dropout, MixUp, and CutMix.
 
-From my personal point of view, the results do not seem too impressive because they always improve upon the results of CutMix (without MaxUp) by a very small margin.
-For example, CutMix seems to improve the Top-1 accuracy of the Vanilla setting by around 2.3\% points, while MaxOut + CutMix only improves upon the Vanilla by 2.6\% points.
-If we assume that MaxUp and CutMix are orthogonal methods, it seems like MaxUp only has a performance improvement of around 0.3\% points.
-I am not sure why the authors decided to use CutMix as the base method in all experiments, and it would be interesting to see results without CutMix.
-Furthermore, I am concerned about the training time of this method.
-If we have 10 different augmentations for each sample, it means that each backpropagated sample will require 10 forward passes in order to find the maximum loss.
-I do not feel that this is practical, or even worth it, given that the performance improvement is quite marginal.
+\section{Personal Opinion}
+The proposed method requires multiple forward passes, which limits the usefulness of MaxUp. Moreover, MaxUp seems neither novel nor effective.
 
-
-{\small
-\bibliographystyle{ieee}
-\bibliography{egbib}
-}
 
 \end{document}
